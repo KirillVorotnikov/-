@@ -1,0 +1,2815 @@
+{
+  "activeJobId": "dcfce7cc-7b2f-4553-8911-0a7455f00b6e",
+  "lastPipelineStage": "concepts",
+  "selectedGraphPath": null,
+  "lastDiagnosticsReportId": "C:\\NORNIKEL3\\k2-18\\viz\\logs\\offline_diagnostics_2026-07-02T15-41-38-015Z.json",
+  "lastAuditReportPath": null,
+  "mode": "online",
+  "provider": "openrouter",
+  "hypothesesCache": [
+    {
+      "id": "hyp_failure_fail_GoldSurfacePassivationByLowMeltingFilms",
+      "title": "Unmitigated failure mode: Gold Surface Passivation by Low-Melting Films",
+      "category": "failure_mode",
+      "confidence": 0.66,
+      "summary": "Failure mode \"Gold Surface Passivation by Low-Melting Films\" is documented without mitigation strategies in the graph.",
+      "reasoning": [
+        "Reliability-focused KPI improvements require explicit MITIGATES relationships.",
+        "Absence of mitigation edges suggests open reliability research opportunity."
+      ],
+      "evidence": [],
+      "suggestedExperiments": [
+        "Identify coating, dopant, or processing interventions linked to this failure mode.",
+        "Validate mitigation under accelerated stress conditions."
+      ],
+      "relatedNodes": [
+        "fail_GoldSurfacePassivationByLowMeltingFilms"
+      ],
+      "subgraph": {
+        "nodes": [
+          {
+            "id": "fail_GoldSurfacePassivationByLowMeltingFilms",
+            "type": "FailureMode",
+            "name": "Gold Surface Passivation by Low-Melting Films",
+            "metadata": {},
+            "definition": "A roasting-induced failure mode in which molten or near-molten reaction products coat gold particles and block access of cyanide solutions. This passivation increases gold losses to cyanidation tailings because the metal becomes chemically inaccessible.",
+            "text": "Gold Surface Passivation by Low-Melting Films (пленки легкоплавких соединений на поверхности золота, пассивирование золота пленками, поверхностные пленки легкоплавких соединений)",
+            "ontology_class": "FailureMode",
+            "aliases": [
+              "пленки легкоплавких соединений на поверхности золота",
+              "пассивирование золота пленками",
+              "поверхностные пленки легкоплавких соединений"
+            ],
+            "degree_in": 0,
+            "degree_out": 1,
+            "degree_centrality": 0.0012970168612191958,
+            "pagerank": 0.0007962029355803138,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.0009245823846352722,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0.5,
+            "cluster_id": 3,
+            "bridge_score": 0,
+            "concepts": [
+              "fail_SurfacePassivationByAsSbFilms"
+            ]
+          }
+        ],
+        "edges": []
+      },
+      "relatedConcepts": [
+        "Gold Surface Passivation by Low-Melting Films"
+      ]
+    },
+    {
+      "id": "hyp_failure_fail_HeapChanneling",
+      "title": "Unmitigated failure mode: Heap Channeling",
+      "category": "failure_mode",
+      "confidence": 0.66,
+      "summary": "Failure mode \"Heap Channeling\" is documented without mitigation strategies in the graph.",
+      "reasoning": [
+        "Reliability-focused KPI improvements require explicit MITIGATES relationships.",
+        "Absence of mitigation edges suggests open reliability research opportunity."
+      ],
+      "evidence": [],
+      "suggestedExperiments": [
+        "Identify coating, dopant, or processing interventions linked to this failure mode.",
+        "Validate mitigation under accelerated stress conditions."
+      ],
+      "relatedNodes": [
+        "fail_HeapChanneling"
+      ],
+      "subgraph": {
+        "nodes": [
+          {
+            "id": "fail_HeapChanneling",
+            "type": "FailureMode",
+            "name": "Heap Channeling",
+            "metadata": {},
+            "definition": "Nonuniform flow of leach solution through preferential paths in a heap. It reduces contact with ore, worsens extraction uniformity, and is promoted by poor stacking, segregation, and fines migration.",
+            "text": "Heap Channeling (каналообразование, неравномерное просачивание)",
+            "ontology_class": "FailureMode",
+            "aliases": [
+              "каналообразование",
+              "неравномерное просачивание"
+            ],
+            "degree_in": 0,
+            "degree_out": 2,
+            "degree_centrality": 0.0025940337224383916,
+            "pagerank": 0.0007962029355803138,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.0009245823846352722,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0.2,
+            "cluster_id": 17,
+            "bridge_score": 0,
+            "concepts": [
+              "metric_HeapLeachCycleTime",
+              "method_HeapLeaching"
+            ]
+          }
+        ],
+        "edges": []
+      },
+      "relatedConcepts": [
+        "Heap Channeling"
+      ]
+    },
+    {
+      "id": "hyp_failure_fail_ClayCompaction",
+      "title": "Unmitigated failure mode: Clay Compaction",
+      "category": "failure_mode",
+      "confidence": 0.66,
+      "summary": "Failure mode \"Clay Compaction\" is documented without mitigation strategies in the graph.",
+      "reasoning": [
+        "Reliability-focused KPI improvements require explicit MITIGATES relationships.",
+        "Absence of mitigation edges suggests open reliability research opportunity."
+      ],
+      "evidence": [],
+      "suggestedExperiments": [
+        "Identify coating, dopant, or processing interventions linked to this failure mode.",
+        "Validate mitigation under accelerated stress conditions."
+      ],
+      "relatedNodes": [
+        "fail_ClayCompaction"
+      ],
+      "subgraph": {
+        "nodes": [
+          {
+            "id": "fail_ClayCompaction",
+            "type": "FailureMode",
+            "name": "Clay Compaction",
+            "metadata": {},
+            "definition": "Loss of heap permeability caused by clay-rich material being compressed during stacking or equipment traffic. In the slice, this is a key reason for reduced gold recovery from clayey and high-carbonate ores and motivates lower heap heights.",
+            "text": "Clay Compaction (уплотнение глинистых руд, уплотнение глинистой фракции)",
+            "ontology_class": "FailureMode",
+            "aliases": [
+              "уплотнение глинистых руд",
+              "уплотнение глинистой фракции"
+            ],
+            "degree_in": 0,
+            "degree_out": 4,
+            "degree_centrality": 0.005188067444876783,
+            "pagerank": 0.0007962029355803138,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.0009245823846352722,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 25,
+            "bridge_score": 0.15000000000000002,
+            "concepts": [
+              "method_GravityConcentration",
+              "equip_AmalgamationSluice",
+              "mech_CyanideComplexation",
+              "prop_CyanideConcentration"
+            ]
+          }
+        ],
+        "edges": []
+      },
+      "relatedConcepts": [
+        "Clay Compaction"
+      ]
+    },
+    {
+      "id": "hyp_kpi_target_gap_mat_Ti_Ta_Coating",
+      "title": "KPI gap for Ti-Ta Coating",
+      "category": "kpi_target_gap",
+      "confidence": 0.66,
+      "summary": "Ti-Ta Coating has 3 property links but no KPI_Target connections.",
+      "reasoning": [
+        "Structure-property-KPI chains are incomplete for optimization targeting.",
+        "Missing KPI_Target edges limit measurable performance hypotheses."
+      ],
+      "evidence": [
+        {
+          "edgeType": "IMPROVES",
+          "source": "Ti-Ta Coating",
+          "target": "Young's Modulus",
+          "sourceId": "mat_Ti_Ta_Coating",
+          "targetId": "prop_Youngs_Modulus",
+          "quote": "получить модуль упругости, сопоставимый с костной тканью человека",
+          "confidence": 0.91,
+          "weight": 0.5
+        },
+        {
+          "edgeType": "IMPROVES",
+          "source": "Ti-Ta Coating",
+          "target": "Nanohardness",
+          "sourceId": "mat_Ti_Ta_Coating",
+          "targetId": "prop_Nanohardness",
+          "quote": "покрытия системы Ti-Ta, свойства которых ... нанотвердость, модуль упругости",
+          "confidence": 0.84,
+          "weight": 0.5
+        },
+        {
+          "edgeType": "IMPROVES",
+          "source": "Ti-Ta Coating",
+          "target": "Bioinertness",
+          "sourceId": "mat_Ti_Ta_Coating",
+          "targetId": "prop_Bioinertness",
+          "quote": "биоинертные покрытия системы Ti-Ta",
+          "confidence": 0.93,
+          "weight": 0.5
+        }
+      ],
+      "suggestedExperiments": [
+        "Define KPI_Target nodes for key performance metrics of Ti-Ta Coating.",
+        "Link synthesis parameters to KPI outcomes through property intermediates."
+      ],
+      "relatedNodes": [
+        "mat_Ti_Ta_Coating",
+        "prop_Youngs_Modulus",
+        "prop_Nanohardness",
+        "prop_Bioinertness"
+      ],
+      "subgraph": {
+        "nodes": [
+          {
+            "id": "prop_Youngs_Modulus",
+            "type": "Property",
+            "text": "Young's Modulus",
+            "node_offset": 540,
+            "definition": "Механическая характеристика жёсткости материала, определяемая как отношение нормального напряжения к соответствующей деформации в упругой области. Регулирование модуля упругости в ячеистых структурах важно для создания имплантатов с требуемой жёсткостью.",
+            "ontology_class": "Property",
+            "degree_in": 3,
+            "degree_out": 2,
+            "degree_centrality": 0.006485084306095979,
+            "pagerank": 0.0013829345915110462,
+            "betweenness_centrality": 0.000010106624892617111,
+            "ontological_pagerank": 0.0016055419900573302,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 2,
+            "failure_proximity": 0,
+            "cluster_id": 6,
+            "bridge_score": 0.06000707463742484,
+            "concepts": [
+              "mech_VanDerWaalsForces",
+              "char_FEM",
+              "mat_Ti_Ta_Coating",
+              "char_Compression_Testing_ISO13314",
+              "mat_Ti-6Al-4V"
+            ]
+          },
+          {
+            "id": "mat_Ti_Ta_Coating",
+            "type": "Material",
+            "text": "Ti-Ta Coating",
+            "node_offset": 1350,
+            "definition": "Биоинертное покрытие на основе β-фазного сплава титана и тантала, наносимое электровзрывным напылением, отличающееся низким модулем упругости и наноструктурированной поверхностью; предназначено для улучшения остеоинтеграции титановых имплантатов.",
+            "ontology_class": "Material",
+            "degree_in": 0,
+            "degree_out": 6,
+            "degree_centrality": 0.007782101167315175,
+            "pagerank": 0.0007962029355803138,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.0009245823846352722,
+            "synthesis_diversity": 0,
+            "property_coverage": 3,
+            "application_breadth": 1,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 6,
+            "bridge_score": 0,
+            "concepts": [
+              "prop_Youngs_Modulus",
+              "prop_Nanohardness",
+              "synth_Electroexplosive_Spraying",
+              "mat_Beta_Ti_Alloys",
+              "prop_Bioinertness",
+              "app_Medical_Implants"
+            ]
+          },
+          {
+            "id": "prop_Nanohardness",
+            "type": "Property",
+            "text": "Nanohardness",
+            "node_offset": 1520,
+            "definition": "Твёрдость материала, измеренная на нанометровом масштабе (часто методом индентирования), отражающая локальные механические свойства поверхностных слоёв, покрытий и наноструктурированных материалов.",
+            "ontology_class": "Property",
+            "degree_in": 1,
+            "degree_out": 0,
+            "degree_centrality": 0.0012970168612191958,
+            "pagerank": 0.0009090359463362239,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.001055536154908745,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 6,
+            "bridge_score": 0,
+            "concepts": [
+              "mat_Ti_Ta_Coating"
+            ]
+          },
+          {
+            "id": "prop_Bioinertness",
+            "type": "Property",
+            "text": "Bioinertness",
+            "node_offset": 1470,
+            "definition": "Свойство материала не вызывать отторжения или токсических реакций в биологической среде; биоинертные покрытия (например, Ti-Ta) минимизируют воспалительные процессы и способствуют интеграции имплантата.",
+            "ontology_class": "Property",
+            "degree_in": 1,
+            "degree_out": 0,
+            "degree_centrality": 0.0012970168612191958,
+            "pagerank": 0.0009090359463362239,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.001055536154908745,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 6,
+            "bridge_score": 0,
+            "concepts": [
+              "mat_Ti_Ta_Coating"
+            ]
+          }
+        ],
+        "edges": [
+          {
+            "source": "mat_Ti_Ta_Coating",
+            "target": "prop_Youngs_Modulus",
+            "type": "IMPROVES",
+            "weight": 0.5,
+            "conditions": "",
+            "attributes": {
+              "confidence_score": 0.91,
+              "evidence_quote": "получить модуль упругости, сопоставимый с костной тканью человека",
+              "source_doi": "new_textets.txt",
+              "co_occurrence_count": 1,
+              "relation_role": "causal",
+              "magnitude": "low",
+              "direction": "positive"
+            },
+            "inverse_weight": 2,
+            "is_inter_cluster_edge": false
+          },
+          {
+            "source": "mat_Ti_Ta_Coating",
+            "target": "prop_Nanohardness",
+            "type": "IMPROVES",
+            "weight": 0.5,
+            "conditions": "",
+            "attributes": {
+              "confidence_score": 0.84,
+              "evidence_quote": "покрытия системы Ti-Ta, свойства которых ... нанотвердость, модуль упругости",
+              "source_doi": "new_textets.txt",
+              "co_occurrence_count": 1,
+              "relation_role": "causal",
+              "direction": "positive"
+            },
+            "inverse_weight": 2,
+            "is_inter_cluster_edge": false
+          },
+          {
+            "source": "mat_Ti_Ta_Coating",
+            "target": "prop_Bioinertness",
+            "type": "IMPROVES",
+            "weight": 0.5,
+            "conditions": "",
+            "attributes": {
+              "confidence_score": 0.93,
+              "evidence_quote": "биоинертные покрытия системы Ti-Ta",
+              "source_doi": "new_textets.txt",
+              "co_occurrence_count": 1,
+              "relation_role": "causal",
+              "direction": "positive"
+            },
+            "inverse_weight": 2,
+            "is_inter_cluster_edge": false
+          }
+        ]
+      },
+      "relatedConcepts": [
+        "Ti-Ta Coating",
+        "Young's Modulus",
+        "Nanohardness",
+        "Bioinertness"
+      ]
+    },
+    {
+      "id": "hyp_failure_fail_ActivatedCarbonAttrition",
+      "title": "Unmitigated failure mode: Activated Carbon Attrition",
+      "category": "failure_mode",
+      "confidence": 0.64,
+      "summary": "Failure mode \"Activated Carbon Attrition\" is documented without mitigation strategies in the graph.",
+      "reasoning": [
+        "Reliability-focused KPI improvements require explicit MITIGATES relationships.",
+        "Absence of mitigation edges suggests open reliability research opportunity."
+      ],
+      "evidence": [
+        {
+          "edgeType": "CHARACTERIZED_BY",
+          "source": "Activated Carbon Loss",
+          "target": "Activated Carbon Attrition",
+          "sourceId": "metric_ActivatedCarbonLoss",
+          "targetId": "fail_ActivatedCarbonAttrition",
+          "quote": "The activated carbon loss metric is a key indicator of attrition failure, which is investigated in later studies as a primary cause of material loss.",
+          "confidence": 0.7,
+          "weight": 0.7
+        }
+      ],
+      "suggestedExperiments": [
+        "Identify coating, dopant, or processing interventions linked to this failure mode.",
+        "Validate mitigation under accelerated stress conditions."
+      ],
+      "relatedNodes": [
+        "fail_ActivatedCarbonAttrition"
+      ],
+      "subgraph": {
+        "nodes": [
+          {
+            "id": "fail_ActivatedCarbonAttrition",
+            "type": "FailureMode",
+            "name": "Activated Carbon Attrition",
+            "metadata": {},
+            "definition": "Mechanical degradation of activated carbon during transport, pumping, and cyclic column transfer, producing fine fractions that are lost with process streams. The slice identifies low mechanical strength and resulting sorbent losses as a key limitation of carbon sorption in cyanide circuits.",
+            "text": "Activated Carbon Attrition (механическое разрушение угля, истирание угля, измельчение сорбента в мелкие фракции)",
+            "ontology_class": "FailureMode",
+            "aliases": [
+              "механическое разрушение угля",
+              "истирание угля",
+              "измельчение сорбента в мелкие фракции"
+            ],
+            "degree_in": 1,
+            "degree_out": 2,
+            "degree_centrality": 0.0038910505836575876,
+            "pagerank": 0.0011618934703402344,
+            "betweenness_centrality": 0.000013475499856822814,
+            "ontological_pagerank": 0.0016054502143296391,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 4,
+            "bridge_score": 0.000009432849899775969,
+            "concepts": [
+              "method_ActivatedCarbonSorption",
+              "metric_ActivatedCarbonLoss"
+            ]
+          }
+        ],
+        "edges": []
+      },
+      "relatedConcepts": [
+        "Activated Carbon Attrition"
+      ]
+    },
+    {
+      "id": "hyp_kpi_target_gap_mat_SodiumSulfide",
+      "title": "KPI gap for Sodium Sulfide",
+      "category": "kpi_target_gap",
+      "confidence": 0.64,
+      "summary": "Sodium Sulfide has 2 property links but no KPI_Target connections.",
+      "reasoning": [
+        "Structure-property-KPI chains are incomplete for optimization targeting.",
+        "Missing KPI_Target edges limit measurable performance hypotheses."
+      ],
+      "evidence": [
+        {
+          "edgeType": "IMPROVES",
+          "source": "Sodium Sulfide",
+          "target": "Selectivity",
+          "sourceId": "mat_SodiumSulfide",
+          "targetId": "prop_Selectivity",
+          "quote": "Этот реагент десорбирует собиратель с поверхности сульфидных минералов, что может быть использовано лишь при высоких концентрациях сернистого натрия",
+          "confidence": 0.93,
+          "weight": 0.93
+        },
+        {
+          "edgeType": "IMPROVES",
+          "source": "Sodium Sulfide",
+          "target": "Hydrophobicity",
+          "sourceId": "mat_SodiumSulfide",
+          "targetId": "prop_Hydrophobicity",
+          "quote": "добавление сернистого натрия (при флотации окисленных углей и антрацитов)",
+          "confidence": 0.8,
+          "weight": 0.8
+        }
+      ],
+      "suggestedExperiments": [
+        "Define KPI_Target nodes for key performance metrics of Sodium Sulfide.",
+        "Link synthesis parameters to KPI outcomes through property intermediates."
+      ],
+      "relatedNodes": [
+        "mat_SodiumSulfide",
+        "prop_Selectivity",
+        "prop_Hydrophobicity"
+      ],
+      "subgraph": {
+        "nodes": [
+          {
+            "id": "mat_SodiumSulfide",
+            "type": "Material",
+            "name": "Sodium Sulfide",
+            "metadata": {},
+            "definition": "An inorganic sulfide depressant used in flotation. The slice describes it as a reagent that suppresses many sulfide minerals and sulfidized oxidized minerals by introducing sulfide and hydrosulfide species into the pulp.",
+            "text": "Sodium Sulfide (сернистый натрий, Na2S)",
+            "ontology_class": "Material",
+            "aliases": [
+              "сернистый натрий",
+              "Na2S"
+            ],
+            "degree_in": 1,
+            "degree_out": 6,
+            "degree_centrality": 0.00907911802853437,
+            "pagerank": 0.0011347019678480442,
+            "betweenness_centrality": 0.000008422187410514259,
+            "ontological_pagerank": 0.0009245823846352722,
+            "synthesis_diversity": 0,
+            "property_coverage": 2,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0.3333333333333333,
+            "cluster_id": 9,
+            "bridge_score": 0.12857732410261594,
+            "concepts": [
+              "metric_ReagentConsumption",
+              "prop_Selectivity",
+              "const_SeparateStorageOfToxicReagents",
+              "cond_AlkalineMedium",
+              "prop_Hydrophobicity"
+            ]
+          },
+          {
+            "id": "prop_Hydrophobicity",
+            "type": "Property",
+            "name": "Hydrophobicity",
+            "metadata": {},
+            "definition": "Tendency of a surface or particle to resist wetting by water and preferentially interact with a gas phase. In flotation, higher hydrophobicity promotes bubble attachment and froth recovery.",
+            "text": "Hydrophobicity (гидрофобность)",
+            "ontology_class": "Property",
+            "aliases": [
+              "гидрофобность"
+            ],
+            "degree_in": 36,
+            "degree_out": 0,
+            "degree_centrality": 0.04669260700389105,
+            "pagerank": 0.014059686287659466,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.0174938231984664,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 5,
+            "bridge_score": 0.1,
+            "concepts": [
+              "mat_SodiumSulfide",
+              "prop_Polarizability",
+              "mat_Sulfur",
+              "fail_SurfaceOxidation",
+              "prop_Anisotropy",
+              "prop_Flowability",
+              "mech_PhysicalAdsorption",
+              "mat_Graphite",
+              "mat_ApolarCollector",
+              "mat_NativeSulfur",
+              "mat_Talc",
+              "mat_Oxygen",
+              "mat_Coal"
+            ]
+          },
+          {
+            "id": "prop_Selectivity",
+            "type": "Property",
+            "name": "Selectivity",
+            "metadata": {},
+            "definition": "The degree to which a collector or surface process acts preferentially on one mineral phase over others. In the slice, selectivity is governed by the solidophilic group and by the specificity and strength of surface bonding.",
+            "text": "Selectivity (избирательность, селективность, избирательность действия)",
+            "ontology_class": "Property",
+            "aliases": [
+              "избирательность",
+              "селективность",
+              "избирательность действия"
+            ],
+            "degree_in": 38,
+            "degree_out": 0,
+            "degree_centrality": 0.04928664072632944,
+            "pagerank": 0.014399474146676848,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.021287536398533907,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 9,
+            "bridge_score": 0.16578947368421057,
+            "concepts": [
+              "mat_SodiumSulfide",
+              "method_DichromateDepression",
+              "method_RecleaningFlotation",
+              "fail_SurfaceOxidation",
+              "mat_ZincSulfate",
+              "method_KonevDebrinaDesorptionMethod",
+              "mat_CalciumHydroxide",
+              "cond_FineParticleSize",
+              "mat_SodiumCyanide",
+              "mech_PhysicalAdsorption",
+              "mat_Oxygen"
+            ]
+          }
+        ],
+        "edges": [
+          {
+            "source": "mat_SodiumSulfide",
+            "target": "prop_Selectivity",
+            "type": "IMPROVES",
+            "attributes": {
+              "confidence_score": 0.93,
+              "evidence_quote": "Этот реагент десорбирует собиратель с поверхности сульфидных минералов, что может быть использовано лишь при высоких концентрациях сернистого натрия",
+              "source_doi": "geokniga-flotacionnye-metody-obogashcheniya_0.txt#slice_034",
+              "co_occurrence_count": 1,
+              "relation_role": "causal",
+              "magnitude": "high",
+              "direction": "positive",
+              "condition_context": "at high sodium sulfide concentration"
+            },
+            "inverse_weight": 1,
+            "is_inter_cluster_edge": false
+          },
+          {
+            "source": "mat_SodiumSulfide",
+            "target": "prop_Hydrophobicity",
+            "type": "IMPROVES",
+            "attributes": {
+              "confidence_score": 0.8,
+              "evidence_quote": "добавление сернистого натрия (при флотации окисленных углей и антрацитов)",
+              "source_doi": "Internal_Report",
+              "co_occurrence_count": 1,
+              "relation_role": "causal",
+              "magnitude": "",
+              "direction": "positive",
+              "condition_context": "при флотации окисленных углей и антрацитов"
+            },
+            "inverse_weight": 1,
+            "is_inter_cluster_edge": true,
+            "source_cluster_id": 9,
+            "target_cluster_id": 5
+          }
+        ]
+      },
+      "relatedConcepts": [
+        "Sodium Sulfide",
+        "Selectivity",
+        "Hydrophobicity"
+      ]
+    },
+    {
+      "id": "hyp_kpi_target_gap_mat_Graphite",
+      "title": "KPI gap for Graphite",
+      "category": "kpi_target_gap",
+      "confidence": 0.64,
+      "summary": "Graphite has 2 property links but no KPI_Target connections.",
+      "reasoning": [
+        "Structure-property-KPI chains are incomplete for optimization targeting.",
+        "Missing KPI_Target edges limit measurable performance hypotheses."
+      ],
+      "evidence": [
+        {
+          "edgeType": "IMPROVES",
+          "source": "Graphite",
+          "target": "Hydrophobicity",
+          "sourceId": "mat_Graphite",
+          "targetId": "prop_Hydrophobicity",
+          "quote": "гидрофобность его поверхности, совпадающей с плоскостью спайности",
+          "confidence": 0.97,
+          "weight": 0.97
+        },
+        {
+          "edgeType": "IMPROVES",
+          "source": "Graphite",
+          "target": "Wettability",
+          "sourceId": "mat_Graphite",
+          "targetId": "prop_Wettability",
+          "quote": "на различную смачиваемость водой граней ... на примере графита и серы",
+          "confidence": 0.83,
+          "weight": 0.83
+        }
+      ],
+      "suggestedExperiments": [
+        "Define KPI_Target nodes for key performance metrics of Graphite.",
+        "Link synthesis parameters to KPI outcomes through property intermediates."
+      ],
+      "relatedNodes": [
+        "mat_Graphite",
+        "prop_Hydrophobicity",
+        "prop_Wettability"
+      ],
+      "subgraph": {
+        "nodes": [
+          {
+            "id": "mat_Graphite",
+            "type": "Material",
+            "name": "Graphite",
+            "metadata": {},
+            "definition": "Low-polarity carbonaceous mineral used as an example of a hydrophobic surface in flotation theory. It is not readily wetted by water and therefore behaves differently from silicate minerals.",
+            "text": "Graphite (графит)",
+            "ontology_class": "Material",
+            "aliases": [
+              "графит"
+            ],
+            "degree_in": 0,
+            "degree_out": 9,
+            "degree_centrality": 0.011673151750972763,
+            "pagerank": 0.0007962029355803138,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.0009245823846352722,
+            "synthesis_diversity": 0,
+            "property_coverage": 2,
+            "application_breadth": 2,
+            "characterization_richness": 0,
+            "failure_proximity": 0.5,
+            "cluster_id": 5,
+            "bridge_score": 0.16666666666666669,
+            "concepts": [
+              "app_GraphiteFlotation",
+              "method_Roasting",
+              "prop_Hydrophobicity",
+              "fail_MercuryNonCoalescence",
+              "prop_Wettability",
+              "app_MineralBeneficiation"
+            ]
+          },
+          {
+            "id": "prop_Hydrophobicity",
+            "type": "Property",
+            "name": "Hydrophobicity",
+            "metadata": {},
+            "definition": "Tendency of a surface or particle to resist wetting by water and preferentially interact with a gas phase. In flotation, higher hydrophobicity promotes bubble attachment and froth recovery.",
+            "text": "Hydrophobicity (гидрофобность)",
+            "ontology_class": "Property",
+            "aliases": [
+              "гидрофобность"
+            ],
+            "degree_in": 36,
+            "degree_out": 0,
+            "degree_centrality": 0.04669260700389105,
+            "pagerank": 0.014059686287659466,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.0174938231984664,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 5,
+            "bridge_score": 0.1,
+            "concepts": [
+              "mat_SodiumSulfide",
+              "prop_Polarizability",
+              "mat_Sulfur",
+              "fail_SurfaceOxidation",
+              "prop_Anisotropy",
+              "prop_Flowability",
+              "mech_PhysicalAdsorption",
+              "mat_Graphite",
+              "mat_ApolarCollector",
+              "mat_NativeSulfur",
+              "mat_Talc",
+              "mat_Oxygen",
+              "mat_Coal"
+            ]
+          },
+          {
+            "id": "prop_Wettability",
+            "type": "Property",
+            "name": "Wettability",
+            "metadata": {},
+            "definition": "Ability of a liquid to spread on and adhere to a solid surface. In flotation, wettability depends strongly on the polarity mismatch between the liquid and the mineral surface.",
+            "text": "Wettability (смачиваемость)",
+            "ontology_class": "Property",
+            "aliases": [
+              "смачиваемость"
+            ],
+            "degree_in": 13,
+            "degree_out": 0,
+            "degree_centrality": 0.016861219195849545,
+            "pagerank": 0.0055444925988011266,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.007125516939825974,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 5,
+            "bridge_score": 0.1153846153846154,
+            "concepts": [
+              "mat_Quartz",
+              "mat_SulfideMineral",
+              "prop_Polarizability",
+              "mat_Sulfur",
+              "fail_MercuryNonCoalescence",
+              "mat_Gold",
+              "mat_Graphite",
+              "prop_Flowability"
+            ]
+          }
+        ],
+        "edges": [
+          {
+            "source": "mat_Graphite",
+            "target": "prop_Hydrophobicity",
+            "type": "IMPROVES",
+            "attributes": {
+              "confidence_score": 0.97,
+              "evidence_quote": "гидрофобность его поверхности, совпадающей с плоскостью спайности",
+              "source_doi": "geokniga-flotacionnye-metody-obogashcheniya_0.txt",
+              "co_occurrence_count": 1,
+              "relation_role": "causal",
+              "direction": "positive",
+              "condition_context": "at the cleavage plane"
+            },
+            "inverse_weight": 1,
+            "is_inter_cluster_edge": false
+          },
+          {
+            "source": "mat_Graphite",
+            "target": "prop_Wettability",
+            "type": "IMPROVES",
+            "attributes": {
+              "confidence_score": 0.83,
+              "evidence_quote": "на различную смачиваемость водой граней ... на примере графита и серы",
+              "source_doi": "Internal_Report_ID",
+              "co_occurrence_count": 1,
+              "relation_role": "causal",
+              "direction": "positive",
+              "condition_context": "specific crystal faces"
+            },
+            "inverse_weight": 1,
+            "is_inter_cluster_edge": false
+          }
+        ]
+      },
+      "relatedConcepts": [
+        "Graphite",
+        "Hydrophobicity",
+        "Wettability"
+      ]
+    },
+    {
+      "id": "hyp_kpi_target_gap_mat_NativeSulfur",
+      "title": "KPI gap for Native Sulfur",
+      "category": "kpi_target_gap",
+      "confidence": 0.64,
+      "summary": "Native Sulfur has 2 property links but no KPI_Target connections.",
+      "reasoning": [
+        "Structure-property-KPI chains are incomplete for optimization targeting.",
+        "Missing KPI_Target edges limit measurable performance hypotheses."
+      ],
+      "evidence": [
+        {
+          "edgeType": "IMPROVES",
+          "source": "Native Sulfur",
+          "target": "Hydrophobicity",
+          "sourceId": "mat_NativeSulfur",
+          "targetId": "prop_Hydrophobicity",
+          "quote": "Краевые углы смачивания ... самородная сера 75—85°",
+          "confidence": 0.9,
+          "weight": 0.9
+        },
+        {
+          "edgeType": "CAUSES",
+          "source": "Native Sulfur",
+          "target": "Hydrophobicity",
+          "sourceId": "mat_NativeSulfur",
+          "targetId": "prop_Hydrophobicity",
+          "quote": "высокая природная гидрофобность серы",
+          "confidence": 0.95,
+          "weight": 0.95
+        }
+      ],
+      "suggestedExperiments": [
+        "Define KPI_Target nodes for key performance metrics of Native Sulfur.",
+        "Link synthesis parameters to KPI outcomes through property intermediates."
+      ],
+      "relatedNodes": [
+        "mat_NativeSulfur",
+        "prop_Hydrophobicity",
+        "prop_Hydrophobicity"
+      ],
+      "subgraph": {
+        "nodes": [
+          {
+            "id": "mat_NativeSulfur",
+            "type": "Material",
+            "name": "Native Sulfur",
+            "metadata": {},
+            "definition": "Naturally occurring elemental sulfur present in ore bodies as a recoverable mineral commodity. It is the principal feed material in sulfur ore beneficiation and is processed by gravity, flotation, thermal, and extraction routes.",
+            "text": "Native Sulfur (самородная сера, элементарная сера природного происхождения)",
+            "ontology_class": "Material",
+            "aliases": [
+              "самородная сера",
+              "элементарная сера природного происхождения"
+            ],
+            "degree_in": 0,
+            "degree_out": 3,
+            "degree_centrality": 0.0038910505836575876,
+            "pagerank": 0.0007962029355803138,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.0009245823846352722,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 2,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 2,
+            "bridge_score": 0.1,
+            "concepts": [
+              "prop_Hydrophobicity",
+              "app_MineralBeneficiation"
+            ]
+          },
+          {
+            "id": "prop_Hydrophobicity",
+            "type": "Property",
+            "name": "Hydrophobicity",
+            "metadata": {},
+            "definition": "Tendency of a surface or particle to resist wetting by water and preferentially interact with a gas phase. In flotation, higher hydrophobicity promotes bubble attachment and froth recovery.",
+            "text": "Hydrophobicity (гидрофобность)",
+            "ontology_class": "Property",
+            "aliases": [
+              "гидрофобность"
+            ],
+            "degree_in": 36,
+            "degree_out": 0,
+            "degree_centrality": 0.04669260700389105,
+            "pagerank": 0.014059686287659466,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.0174938231984664,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 5,
+            "bridge_score": 0.1,
+            "concepts": [
+              "mat_SodiumSulfide",
+              "prop_Polarizability",
+              "mat_Sulfur",
+              "fail_SurfaceOxidation",
+              "prop_Anisotropy",
+              "prop_Flowability",
+              "mech_PhysicalAdsorption",
+              "mat_Graphite",
+              "mat_ApolarCollector",
+              "mat_NativeSulfur",
+              "mat_Talc",
+              "mat_Oxygen",
+              "mat_Coal"
+            ]
+          }
+        ],
+        "edges": [
+          {
+            "source": "mat_NativeSulfur",
+            "target": "prop_Hydrophobicity",
+            "type": "IMPROVES",
+            "attributes": {
+              "confidence_score": 0.9,
+              "evidence_quote": "Краевые углы смачивания ... самородная сера 75—85°",
+              "source_doi": "geokniga-flotacionnye-metody-obogashcheniya_0.txt",
+              "co_occurrence_count": 1,
+              "relation_role": "causal",
+              "direction": "positive"
+            },
+            "inverse_weight": 1,
+            "is_inter_cluster_edge": true,
+            "source_cluster_id": 2,
+            "target_cluster_id": 5
+          },
+          {
+            "source": "mat_NativeSulfur",
+            "target": "prop_Hydrophobicity",
+            "type": "CAUSES",
+            "attributes": {
+              "confidence_score": 0.95,
+              "evidence_quote": "высокая природная гидрофобность серы",
+              "source_doi": "geokniga-flotacionnye-metody-obogashcheniya_0.txt",
+              "co_occurrence_count": 1,
+              "relation_role": "causal",
+              "magnitude": "high",
+              "direction": "positive",
+              "condition_context": null
+            },
+            "inverse_weight": 1,
+            "is_inter_cluster_edge": true,
+            "source_cluster_id": 2,
+            "target_cluster_id": 5
+          }
+        ]
+      },
+      "relatedConcepts": [
+        "Native Sulfur",
+        "Hydrophobicity",
+        "Hydrophobicity"
+      ]
+    },
+    {
+      "id": "hyp_kpi_target_gap_mat_Talc",
+      "title": "KPI gap for Talc",
+      "category": "kpi_target_gap",
+      "confidence": 0.64,
+      "summary": "Talc has 2 property links but no KPI_Target connections.",
+      "reasoning": [
+        "Structure-property-KPI chains are incomplete for optimization targeting.",
+        "Missing KPI_Target edges limit measurable performance hypotheses."
+      ],
+      "evidence": [
+        {
+          "edgeType": "IMPROVES",
+          "source": "Talc",
+          "target": "Hydrophobicity",
+          "sourceId": "mat_Talc",
+          "targetId": "prop_Hydrophobicity",
+          "quote": "Краевые углы смачивания ... тальк 52—69°",
+          "confidence": 0.9,
+          "weight": 0.9
+        },
+        {
+          "edgeType": "CAUSES",
+          "source": "Talc",
+          "target": "Hydrophobicity",
+          "sourceId": "mat_Talc",
+          "targetId": "prop_Hydrophobicity",
+          "quote": "Высокая природная гидрофобность талька зависит от слоистой структуры его кристаллической решетки",
+          "confidence": 0.95,
+          "weight": 0.95
+        }
+      ],
+      "suggestedExperiments": [
+        "Define KPI_Target nodes for key performance metrics of Talc.",
+        "Link synthesis parameters to KPI outcomes through property intermediates."
+      ],
+      "relatedNodes": [
+        "mat_Talc",
+        "prop_Hydrophobicity",
+        "prop_Hydrophobicity"
+      ],
+      "subgraph": {
+        "nodes": [
+          {
+            "id": "mat_Talc",
+            "type": "Material",
+            "name": "Talc",
+            "metadata": {},
+            "definition": "Hydrophobic magnesium silicate mineral commonly removed from ores by flotation. The slice notes separation of talc from mica as a practical cationic-collector application.",
+            "text": "Talc (тальк)",
+            "ontology_class": "Material",
+            "aliases": [
+              "тальк"
+            ],
+            "degree_in": 0,
+            "degree_out": 4,
+            "degree_centrality": 0.005188067444876783,
+            "pagerank": 0.0007962029355803138,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.0009245823846352722,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 2,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 1,
+            "bridge_score": 0.22500000000000003,
+            "concepts": [
+              "app_TalcFlotation",
+              "prop_Hydrophobicity",
+              "app_MineralBeneficiation"
+            ]
+          },
+          {
+            "id": "prop_Hydrophobicity",
+            "type": "Property",
+            "name": "Hydrophobicity",
+            "metadata": {},
+            "definition": "Tendency of a surface or particle to resist wetting by water and preferentially interact with a gas phase. In flotation, higher hydrophobicity promotes bubble attachment and froth recovery.",
+            "text": "Hydrophobicity (гидрофобность)",
+            "ontology_class": "Property",
+            "aliases": [
+              "гидрофобность"
+            ],
+            "degree_in": 36,
+            "degree_out": 0,
+            "degree_centrality": 0.04669260700389105,
+            "pagerank": 0.014059686287659466,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.0174938231984664,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 5,
+            "bridge_score": 0.1,
+            "concepts": [
+              "mat_SodiumSulfide",
+              "prop_Polarizability",
+              "mat_Sulfur",
+              "fail_SurfaceOxidation",
+              "prop_Anisotropy",
+              "prop_Flowability",
+              "mech_PhysicalAdsorption",
+              "mat_Graphite",
+              "mat_ApolarCollector",
+              "mat_NativeSulfur",
+              "mat_Talc",
+              "mat_Oxygen",
+              "mat_Coal"
+            ]
+          }
+        ],
+        "edges": [
+          {
+            "source": "mat_Talc",
+            "target": "prop_Hydrophobicity",
+            "type": "IMPROVES",
+            "attributes": {
+              "confidence_score": 0.9,
+              "evidence_quote": "Краевые углы смачивания ... тальк 52—69°",
+              "source_doi": "geokniga-flotacionnye-metody-obogashcheniya_0.txt",
+              "co_occurrence_count": 1,
+              "relation_role": "causal",
+              "direction": "positive"
+            },
+            "inverse_weight": 1,
+            "is_inter_cluster_edge": true,
+            "source_cluster_id": 1,
+            "target_cluster_id": 5
+          },
+          {
+            "source": "mat_Talc",
+            "target": "prop_Hydrophobicity",
+            "type": "CAUSES",
+            "attributes": {
+              "confidence_score": 0.95,
+              "evidence_quote": "Высокая природная гидрофобность талька зависит от слоистой структуры его кристаллической решетки",
+              "source_doi": "geokniga-flotacionnye-metody-obogashcheniya_0.txt",
+              "co_occurrence_count": 1,
+              "relation_role": "causal",
+              "magnitude": "high",
+              "direction": "positive",
+              "condition_context": null
+            },
+            "inverse_weight": 1,
+            "is_inter_cluster_edge": true,
+            "source_cluster_id": 1,
+            "target_cluster_id": 5
+          }
+        ]
+      },
+      "relatedConcepts": [
+        "Talc",
+        "Hydrophobicity",
+        "Hydrophobicity"
+      ]
+    },
+    {
+      "id": "hyp_kpi_target_gap_mat_Gold",
+      "title": "KPI gap for Gold",
+      "category": "kpi_target_gap",
+      "confidence": 0.64,
+      "summary": "Gold has 2 property links but no KPI_Target connections.",
+      "reasoning": [
+        "Structure-property-KPI chains are incomplete for optimization targeting.",
+        "Missing KPI_Target edges limit measurable performance hypotheses."
+      ],
+      "evidence": [
+        {
+          "edgeType": "IMPROVES",
+          "source": "Gold",
+          "target": "Chemical Stability",
+          "sourceId": "mat_Gold",
+          "targetId": "prop_ChemicalStability",
+          "quote": "По мере возрастания химической устойчивости ... устойчивые: платина, золото",
+          "confidence": 0.9,
+          "weight": 0.9
+        },
+        {
+          "edgeType": "IMPROVES",
+          "source": "Gold",
+          "target": "Wettability",
+          "sourceId": "mat_Gold",
+          "targetId": "prop_Wettability",
+          "quote": "смачивается ртутью хорошо",
+          "confidence": 0.9,
+          "weight": 0.9
+        }
+      ],
+      "suggestedExperiments": [
+        "Define KPI_Target nodes for key performance metrics of Gold.",
+        "Link synthesis parameters to KPI outcomes through property intermediates."
+      ],
+      "relatedNodes": [
+        "mat_Gold",
+        "prop_ChemicalStability",
+        "prop_Wettability"
+      ],
+      "subgraph": {
+        "nodes": [
+          {
+            "id": "mat_Gold",
+            "type": "Material",
+            "name": "Gold",
+            "metadata": {},
+            "definition": "A precious metal mentioned in the context of cyanide flotation suppression. Cyanides can dissolve gold and thereby lower gold recovery into the froth product, which is an important practical limitation.",
+            "text": "Gold (золото, Au)",
+            "ontology_class": "Material",
+            "aliases": [
+              "золото",
+              "Au"
+            ],
+            "degree_in": 1,
+            "degree_out": 14,
+            "degree_centrality": 0.019455252918287938,
+            "pagerank": 0.0009654524517141789,
+            "betweenness_centrality": 0.00006569306180201122,
+            "ontological_pagerank": 0.0009245823846352722,
+            "synthesis_diversity": 0,
+            "property_coverage": 2,
+            "application_breadth": 6,
+            "characterization_richness": 0,
+            "failure_proximity": 0.25,
+            "cluster_id": 0,
+            "bridge_score": 0.12004598514326142,
+            "concepts": [
+              "prop_Wettability",
+              "app_NobleMetalFlotation",
+              "app_MineralBeneficiation",
+              "mat_Silver",
+              "method_Cementation",
+              "method_InternalAmalgamation",
+              "prop_ChemicalStability",
+              "app_Hydrometallurgy"
+            ]
+          },
+          {
+            "id": "prop_ChemicalStability",
+            "type": "Property",
+            "name": "Chemical Stability",
+            "metadata": {},
+            "definition": "Resistance of a metal to chemical interaction with surrounding media, especially oxidation and formation of oxygen compounds. The slice identifies this as a defining property of noble metals.",
+            "text": "Chemical Stability (химическая устойчивость, химическая стойкость)",
+            "ontology_class": "Property",
+            "aliases": [
+              "химическая устойчивость",
+              "химическая стойкость"
+            ],
+            "degree_in": 3,
+            "degree_out": 0,
+            "degree_centrality": 0.0038910505836575876,
+            "pagerank": 0.0015629250120881824,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.0016397914376673156,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 0,
+            "bridge_score": 0,
+            "concepts": [
+              "mat_Platinum",
+              "mat_Gold",
+              "mat_Iridium"
+            ]
+          },
+          {
+            "id": "prop_Wettability",
+            "type": "Property",
+            "name": "Wettability",
+            "metadata": {},
+            "definition": "Ability of a liquid to spread on and adhere to a solid surface. In flotation, wettability depends strongly on the polarity mismatch between the liquid and the mineral surface.",
+            "text": "Wettability (смачиваемость)",
+            "ontology_class": "Property",
+            "aliases": [
+              "смачиваемость"
+            ],
+            "degree_in": 13,
+            "degree_out": 0,
+            "degree_centrality": 0.016861219195849545,
+            "pagerank": 0.0055444925988011266,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.007125516939825974,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 5,
+            "bridge_score": 0.1153846153846154,
+            "concepts": [
+              "mat_Quartz",
+              "mat_SulfideMineral",
+              "prop_Polarizability",
+              "mat_Sulfur",
+              "fail_MercuryNonCoalescence",
+              "mat_Gold",
+              "mat_Graphite",
+              "prop_Flowability"
+            ]
+          }
+        ],
+        "edges": [
+          {
+            "source": "mat_Gold",
+            "target": "prop_ChemicalStability",
+            "type": "IMPROVES",
+            "attributes": {
+              "confidence_score": 0.9,
+              "evidence_quote": "По мере возрастания химической устойчивости ... устойчивые: платина, золото",
+              "source_doi": "source_Romanteev2007",
+              "co_occurrence_count": 1,
+              "relation_role": "causal",
+              "direction": "positive",
+              "condition_context": ""
+            },
+            "inverse_weight": 1,
+            "is_inter_cluster_edge": false
+          },
+          {
+            "source": "mat_Gold",
+            "target": "prop_Wettability",
+            "type": "IMPROVES",
+            "attributes": {
+              "confidence_score": 0.9,
+              "evidence_quote": "смачивается ртутью хорошо",
+              "source_doi": "geokniga-metallurgiya-blagorodnyh-metallov_0.txt",
+              "co_occurrence_count": 1,
+              "relation_role": "causal",
+              "magnitude": "high",
+              "direction": "positive",
+              "condition_context": "with mercury, clean surface"
+            },
+            "inverse_weight": 1,
+            "is_inter_cluster_edge": true,
+            "source_cluster_id": 0,
+            "target_cluster_id": 5
+          }
+        ]
+      },
+      "relatedConcepts": [
+        "Gold",
+        "Chemical Stability",
+        "Wettability"
+      ]
+    },
+    {
+      "id": "hyp_kpi_target_gap_mat_Oxygen",
+      "title": "KPI gap for Oxygen",
+      "category": "kpi_target_gap",
+      "confidence": 0.64,
+      "summary": "Oxygen has 2 property links but no KPI_Target connections.",
+      "reasoning": [
+        "Structure-property-KPI chains are incomplete for optimization targeting.",
+        "Missing KPI_Target edges limit measurable performance hypotheses."
+      ],
+      "evidence": [
+        {
+          "edgeType": "IMPROVES",
+          "source": "Oxygen",
+          "target": "Hydrophobicity",
+          "sourceId": "mat_Oxygen",
+          "targetId": "prop_Hydrophobicity",
+          "quote": "Первичное воздействие кислорода на поверхность сульфида вызывает его некоторую гидрофобизацию",
+          "confidence": 0.84,
+          "weight": 0.84
+        },
+        {
+          "edgeType": "IMPROVES",
+          "source": "Oxygen",
+          "target": "Selectivity",
+          "sourceId": "mat_Oxygen",
+          "targetId": "prop_Selectivity",
+          "quote": "Взаимодействие сульфидных минералов с кислородом имеет индивидуальный характер, что способствует повышению селективности их флотации.",
+          "confidence": 0.92,
+          "weight": 0.92
+        }
+      ],
+      "suggestedExperiments": [
+        "Define KPI_Target nodes for key performance metrics of Oxygen.",
+        "Link synthesis parameters to KPI outcomes through property intermediates."
+      ],
+      "relatedNodes": [
+        "mat_Oxygen",
+        "prop_Hydrophobicity",
+        "prop_Selectivity"
+      ],
+      "subgraph": {
+        "nodes": [
+          {
+            "id": "prop_Hydrophobicity",
+            "type": "Property",
+            "name": "Hydrophobicity",
+            "metadata": {},
+            "definition": "Tendency of a surface or particle to resist wetting by water and preferentially interact with a gas phase. In flotation, higher hydrophobicity promotes bubble attachment and froth recovery.",
+            "text": "Hydrophobicity (гидрофобность)",
+            "ontology_class": "Property",
+            "aliases": [
+              "гидрофобность"
+            ],
+            "degree_in": 36,
+            "degree_out": 0,
+            "degree_centrality": 0.04669260700389105,
+            "pagerank": 0.014059686287659466,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.0174938231984664,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 5,
+            "bridge_score": 0.1,
+            "concepts": [
+              "mat_SodiumSulfide",
+              "prop_Polarizability",
+              "mat_Sulfur",
+              "fail_SurfaceOxidation",
+              "prop_Anisotropy",
+              "prop_Flowability",
+              "mech_PhysicalAdsorption",
+              "mat_Graphite",
+              "mat_ApolarCollector",
+              "mat_NativeSulfur",
+              "mat_Talc",
+              "mat_Oxygen",
+              "mat_Coal"
+            ]
+          },
+          {
+            "id": "prop_Selectivity",
+            "type": "Property",
+            "name": "Selectivity",
+            "metadata": {},
+            "definition": "The degree to which a collector or surface process acts preferentially on one mineral phase over others. In the slice, selectivity is governed by the solidophilic group and by the specificity and strength of surface bonding.",
+            "text": "Selectivity (избирательность, селективность, избирательность действия)",
+            "ontology_class": "Property",
+            "aliases": [
+              "избирательность",
+              "селективность",
+              "избирательность действия"
+            ],
+            "degree_in": 38,
+            "degree_out": 0,
+            "degree_centrality": 0.04928664072632944,
+            "pagerank": 0.014399474146676848,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.021287536398533907,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 9,
+            "bridge_score": 0.16578947368421057,
+            "concepts": [
+              "mat_SodiumSulfide",
+              "method_DichromateDepression",
+              "method_RecleaningFlotation",
+              "fail_SurfaceOxidation",
+              "mat_ZincSulfate",
+              "method_KonevDebrinaDesorptionMethod",
+              "mat_CalciumHydroxide",
+              "cond_FineParticleSize",
+              "mat_SodiumCyanide",
+              "mech_PhysicalAdsorption",
+              "mat_Oxygen"
+            ]
+          },
+          {
+            "id": "mat_Oxygen",
+            "type": "Material",
+            "name": "Oxygen",
+            "metadata": {},
+            "definition": "Diatomic gas formed during water electrolysis and used as a bubble-forming phase in electroflotation. It can be used together with or separately from hydrogen to influence flotation behavior.",
+            "text": "Oxygen (кислород)",
+            "ontology_class": "Material",
+            "aliases": [
+              "кислород"
+            ],
+            "degree_in": 0,
+            "degree_out": 4,
+            "degree_centrality": 0.005188067444876783,
+            "pagerank": 0.0007962029355803138,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.0009245823846352722,
+            "synthesis_diversity": 0,
+            "property_coverage": 2,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0.5,
+            "cluster_id": 5,
+            "bridge_score": 0.15000000000000002,
+            "concepts": [
+              "prop_Hydrophobicity",
+              "fail_SurfaceOxidation",
+              "prop_Selectivity"
+            ]
+          }
+        ],
+        "edges": [
+          {
+            "source": "mat_Oxygen",
+            "target": "prop_Hydrophobicity",
+            "type": "IMPROVES",
+            "attributes": {
+              "confidence_score": 0.84,
+              "evidence_quote": "Первичное воздействие кислорода на поверхность сульфида вызывает его некоторую гидрофобизацию",
+              "source_doi": "geokniga-flotacionnye-metody-obogashcheniya_0.txt",
+              "co_occurrence_count": 1,
+              "relation_role": "causal",
+              "direction": "positive",
+              "condition_context": "initial oxygen sorption on sulfide surface"
+            },
+            "inverse_weight": 1,
+            "is_inter_cluster_edge": false
+          },
+          {
+            "source": "mat_Oxygen",
+            "target": "prop_Selectivity",
+            "type": "IMPROVES",
+            "attributes": {
+              "confidence_score": 0.92,
+              "evidence_quote": "Взаимодействие сульфидных минералов с кислородом имеет индивидуальный характер, что способствует повышению селективности их флотации.",
+              "source_doi": "source_FlotationMethodsOfBeneficiation1981",
+              "co_occurrence_count": 1,
+              "relation_role": "causal",
+              "magnitude": "high",
+              "direction": "positive",
+              "condition_context": "during sulfide flotation"
+            },
+            "inverse_weight": 1,
+            "is_inter_cluster_edge": true,
+            "source_cluster_id": 5,
+            "target_cluster_id": 9
+          }
+        ]
+      },
+      "relatedConcepts": [
+        "Oxygen",
+        "Hydrophobicity",
+        "Selectivity"
+      ]
+    },
+    {
+      "id": "hyp_kpi_target_gap_mat_Sulfur",
+      "title": "KPI gap for Sulfur",
+      "category": "kpi_target_gap",
+      "confidence": 0.64,
+      "summary": "Sulfur has 2 property links but no KPI_Target connections.",
+      "reasoning": [
+        "Structure-property-KPI chains are incomplete for optimization targeting.",
+        "Missing KPI_Target edges limit measurable performance hypotheses."
+      ],
+      "evidence": [
+        {
+          "edgeType": "IMPROVES",
+          "source": "Sulfur",
+          "target": "Hydrophobicity",
+          "sourceId": "mat_Sulfur",
+          "targetId": "prop_Hydrophobicity",
+          "quote": "гидрофобность может быть объяснена тем, что при разрушении кристалла серы в первую очередь обнажаются слабые межмолекулярные силы",
+          "confidence": 0.96,
+          "weight": 0.96
+        },
+        {
+          "edgeType": "IMPROVES",
+          "source": "Sulfur",
+          "target": "Wettability",
+          "sourceId": "mat_Sulfur",
+          "targetId": "prop_Wettability",
+          "quote": "на различную смачиваемость водой граней ... на примере графита и серы",
+          "confidence": 0.83,
+          "weight": 0.83
+        }
+      ],
+      "suggestedExperiments": [
+        "Define KPI_Target nodes for key performance metrics of Sulfur.",
+        "Link synthesis parameters to KPI outcomes through property intermediates."
+      ],
+      "relatedNodes": [
+        "mat_Sulfur",
+        "prop_Hydrophobicity",
+        "prop_Wettability"
+      ],
+      "subgraph": {
+        "nodes": [
+          {
+            "id": "prop_Hydrophobicity",
+            "type": "Property",
+            "name": "Hydrophobicity",
+            "metadata": {},
+            "definition": "Tendency of a surface or particle to resist wetting by water and preferentially interact with a gas phase. In flotation, higher hydrophobicity promotes bubble attachment and froth recovery.",
+            "text": "Hydrophobicity (гидрофобность)",
+            "ontology_class": "Property",
+            "aliases": [
+              "гидрофобность"
+            ],
+            "degree_in": 36,
+            "degree_out": 0,
+            "degree_centrality": 0.04669260700389105,
+            "pagerank": 0.014059686287659466,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.0174938231984664,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 5,
+            "bridge_score": 0.1,
+            "concepts": [
+              "mat_SodiumSulfide",
+              "prop_Polarizability",
+              "mat_Sulfur",
+              "fail_SurfaceOxidation",
+              "prop_Anisotropy",
+              "prop_Flowability",
+              "mech_PhysicalAdsorption",
+              "mat_Graphite",
+              "mat_ApolarCollector",
+              "mat_NativeSulfur",
+              "mat_Talc",
+              "mat_Oxygen",
+              "mat_Coal"
+            ]
+          },
+          {
+            "id": "prop_Wettability",
+            "type": "Property",
+            "name": "Wettability",
+            "metadata": {},
+            "definition": "Ability of a liquid to spread on and adhere to a solid surface. In flotation, wettability depends strongly on the polarity mismatch between the liquid and the mineral surface.",
+            "text": "Wettability (смачиваемость)",
+            "ontology_class": "Property",
+            "aliases": [
+              "смачиваемость"
+            ],
+            "degree_in": 13,
+            "degree_out": 0,
+            "degree_centrality": 0.016861219195849545,
+            "pagerank": 0.0055444925988011266,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.007125516939825974,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 5,
+            "bridge_score": 0.1153846153846154,
+            "concepts": [
+              "mat_Quartz",
+              "mat_SulfideMineral",
+              "prop_Polarizability",
+              "mat_Sulfur",
+              "fail_MercuryNonCoalescence",
+              "mat_Gold",
+              "mat_Graphite",
+              "prop_Flowability"
+            ]
+          },
+          {
+            "id": "mat_Sulfur",
+            "type": "Material",
+            "name": "Sulfur",
+            "metadata": {},
+            "definition": "A nonmetallic element used in the text as an example of a crystal whose cleavage exposes weak intermolecular interactions. Its surface properties help illustrate why some minerals are naturally hydrophobic.",
+            "text": "Sulfur (сера)",
+            "ontology_class": "Material",
+            "aliases": [
+              "сера"
+            ],
+            "degree_in": 1,
+            "degree_out": 3,
+            "degree_centrality": 0.005188067444876783,
+            "pagerank": 0.0009316025484874059,
+            "betweenness_centrality": 0.0000050533124463085555,
+            "ontological_pagerank": 0.0009245823846352722,
+            "synthesis_diversity": 0,
+            "property_coverage": 2,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 4,
+            "bridge_score": 0.22500353731871245,
+            "concepts": [
+              "metric_ReagentConsumption",
+              "prop_Hydrophobicity",
+              "prop_Wettability"
+            ]
+          }
+        ],
+        "edges": [
+          {
+            "source": "mat_Sulfur",
+            "target": "prop_Hydrophobicity",
+            "type": "IMPROVES",
+            "attributes": {
+              "confidence_score": 0.96,
+              "evidence_quote": "гидрофобность может быть объяснена тем, что при разрушении кристалла серы в первую очередь обнажаются слабые межмолекулярные силы",
+              "source_doi": "geokniga-flotacionnye-metody-obogashcheniya_0.txt",
+              "co_occurrence_count": 1,
+              "relation_role": "causal",
+              "direction": "positive",
+              "condition_context": "upon crystal fracture"
+            },
+            "inverse_weight": 1,
+            "is_inter_cluster_edge": true,
+            "source_cluster_id": 4,
+            "target_cluster_id": 5
+          },
+          {
+            "source": "mat_Sulfur",
+            "target": "prop_Wettability",
+            "type": "IMPROVES",
+            "attributes": {
+              "confidence_score": 0.83,
+              "evidence_quote": "на различную смачиваемость водой граней ... на примере графита и серы",
+              "source_doi": "Internal_Report_ID",
+              "co_occurrence_count": 1,
+              "relation_role": "causal",
+              "direction": "positive",
+              "condition_context": "specific crystal faces"
+            },
+            "inverse_weight": 1,
+            "is_inter_cluster_edge": true,
+            "source_cluster_id": 4,
+            "target_cluster_id": 5
+          }
+        ]
+      },
+      "relatedConcepts": [
+        "Sulfur",
+        "Hydrophobicity",
+        "Wettability"
+      ]
+    },
+    {
+      "id": "hyp_failure_fail_SurfaceOxidation",
+      "title": "Unmitigated failure mode: Surface Oxidation",
+      "category": "failure_mode",
+      "confidence": 0.58,
+      "summary": "Failure mode \"Surface Oxidation\" is documented without mitigation strategies in the graph.",
+      "reasoning": [
+        "Reliability-focused KPI improvements require explicit MITIGATES relationships.",
+        "Absence of mitigation edges suggests open reliability research opportunity."
+      ],
+      "evidence": [
+        {
+          "edgeType": "CAUSES",
+          "source": "Oxygen",
+          "target": "Surface Oxidation",
+          "sourceId": "mat_Oxygen",
+          "targetId": "fail_SurfaceOxidation",
+          "quote": "При дальнейшем действии кислорода сульфид окисляется и становится более гидрофильным.",
+          "confidence": 0.95,
+          "weight": 0.95
+        },
+        {
+          "edgeType": "CAUSES",
+          "source": "Dissolved Oxygen Concentration",
+          "target": "Surface Oxidation",
+          "sourceId": "cond_DissolvedOxygenConcentration",
+          "targetId": "fail_SurfaceOxidation",
+          "quote": "Изменения состава и структуры таких минералов, как сульфиды, могут произойти благодаря воздействию на них кислорода и воды.",
+          "confidence": 0.94,
+          "weight": 0.94
+        },
+        {
+          "edgeType": "HAS_FAILURE_MODE",
+          "source": "Sulfide Mineral",
+          "target": "Surface Oxidation",
+          "sourceId": "mat_SulfideMineral",
+          "targetId": "fail_SurfaceOxidation",
+          "quote": "резкое изменение концентрации сульфид-иона в растворе в присутствии сульфидных минералов обусловлено наличием на их поверхности окисленных соединений",
+          "confidence": 0.82,
+          "weight": 0.82
+        }
+      ],
+      "suggestedExperiments": [
+        "Identify coating, dopant, or processing interventions linked to this failure mode.",
+        "Validate mitigation under accelerated stress conditions."
+      ],
+      "relatedNodes": [
+        "fail_SurfaceOxidation"
+      ],
+      "subgraph": {
+        "nodes": [
+          {
+            "id": "fail_SurfaceOxidation",
+            "type": "FailureMode",
+            "name": "Surface Oxidation",
+            "metadata": {},
+            "definition": "A degradation process in which dissolved oxygen reacts with a mineral surface, especially sulfide minerals, forming oxidized layers or species. This typically increases hydrophilicity and reduces flotation performance by weakening bubble attachment.",
+            "text": "Surface Oxidation (окисление поверхности, окисление сульфидов)",
+            "ontology_class": "FailureMode",
+            "aliases": [
+              "окисление поверхности",
+              "окисление сульфидов"
+            ],
+            "degree_in": 4,
+            "degree_out": 4,
+            "degree_centrality": 0.010376134889753566,
+            "pagerank": 0.0028387245671272383,
+            "betweenness_centrality": 0.00006569306180201122,
+            "ontological_pagerank": 0.004088008319211039,
+            "synthesis_diversity": 0,
+            "property_coverage": 2,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 5,
+            "bridge_score": 0.07504598514326141,
+            "concepts": [
+              "mat_SulfideMineral",
+              "prop_Selectivity",
+              "prop_Hydrophobicity",
+              "cond_DissolvedOxygenConcentration",
+              "mech_BoundaryLayerDiffusion",
+              "mat_Oxygen"
+            ]
+          }
+        ],
+        "edges": []
+      },
+      "relatedConcepts": [
+        "Surface Oxidation"
+      ]
+    },
+    {
+      "id": "hyp_ssp_chain_synth_Gas_Atomization_mat_Titanium",
+      "title": "Incomplete synthesis-structure-property chain via Gas Atomization",
+      "category": "ssp_chain_gap",
+      "confidence": 0.57,
+      "summary": "Synthesis method \"Gas Atomization\" produces material \"Titanium\" without linked properties or KPIs.",
+      "reasoning": [
+        "Synthesis-structure-property chain is broken at the property/KPI layer."
+      ],
+      "evidence": [
+        {
+          "edgeType": "SYNTHESIZED_BY",
+          "source": "Titanium",
+          "target": "Gas Atomization",
+          "sourceId": "mat_Titanium",
+          "targetId": "synth_Gas_Atomization",
+          "quote": "Титановые порошки получают следующими способами: газовым распылением (Gas Atomization)",
+          "confidence": 0.95,
+          "weight": 0.5
+        },
+        {
+          "edgeType": "SYNTHESIZED_BY",
+          "source": "Titanium",
+          "target": "Gas Atomization",
+          "sourceId": "mat_Titanium",
+          "targetId": "synth_Gas_Atomization",
+          "quote": "Титановые порошки получают следующими способами: газовым распылением (Gas Atomization)",
+          "confidence": 0.95,
+          "weight": 0.5
+        },
+        {
+          "edgeType": "SYNTHESIZED_BY",
+          "source": "Titanium",
+          "target": "Plasma Atomization",
+          "sourceId": "mat_Titanium",
+          "targetId": "synth_Plasma_Atomization",
+          "quote": "плазменным распылением (Plasma Atomization)",
+          "confidence": 0.95,
+          "weight": 0.5
+        }
+      ],
+      "suggestedExperiments": [
+        "Characterize key properties after this synthesis route and link to KPI targets."
+      ],
+      "relatedNodes": [
+        "synth_Gas_Atomization",
+        "mat_Titanium"
+      ],
+      "subgraph": {
+        "nodes": [
+          {
+            "id": "mat_Titanium",
+            "type": "Material",
+            "text": "Titanium (титан, Ti)",
+            "node_offset": 2000,
+            "definition": "Химический элемент (Ti) — лёгкий, прочный, коррозионностойкий металл. Порошок титана используется в аддитивных технологиях для производства деталей.",
+            "name": "Titanium",
+            "ontology_class": "Material",
+            "aliases": [
+              "титан",
+              "Ti"
+            ],
+            "degree_in": 1,
+            "degree_out": 5,
+            "degree_centrality": 0.007782101167315175,
+            "pagerank": 0.0011347019678480442,
+            "betweenness_centrality": 0.000011791062374719962,
+            "ontological_pagerank": 0.0013174436954556904,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 0,
+            "bridge_score": 0.000008253743662303972,
+            "concepts": [
+              "synth_Gas_Atomization",
+              "synth_Plasma_Atomization",
+              "synth_Mechanical_Grinding_Ti_Sponge",
+              "synth_PREP",
+              "synth_Aluminothermic_Reduction",
+              "mat_Tungsten"
+            ]
+          },
+          {
+            "id": "synth_Gas_Atomization",
+            "type": "SynthesisMethod",
+            "text": "Gas Atomization",
+            "node_offset": 2300,
+            "definition": "Метод получения металлического порошка путём распыления струи расплава потоком инертного газа (аргона или гелия), широко применяемый в производстве титановых порошков.",
+            "ontology_class": "SynthesisMethod",
+            "degree_in": 1,
+            "degree_out": 0,
+            "degree_centrality": 0.0012970168612191958,
+            "pagerank": 0.0009891705552516992,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.001148600050157926,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 0,
+            "bridge_score": 0,
+            "concepts": [
+              "mat_Titanium"
+            ]
+          }
+        ],
+        "edges": [
+          {
+            "source": "mat_Titanium",
+            "target": "synth_Gas_Atomization",
+            "type": "SYNTHESIZED_BY",
+            "weight": 0.5,
+            "conditions": "",
+            "attributes": {
+              "confidence_score": 0.95,
+              "evidence_quote": "Титановые порошки получают следующими способами: газовым распылением (Gas Atomization)",
+              "source_doi": "new_textets",
+              "co_occurrence_count": 1,
+              "relation_role": "structural"
+            },
+            "inverse_weight": 2,
+            "is_inter_cluster_edge": false
+          }
+        ]
+      },
+      "relatedConcepts": [
+        "Gas Atomization",
+        "Titanium"
+      ]
+    },
+    {
+      "id": "hyp_ssp_chain_synth_Plasma_Atomization_mat_Titanium",
+      "title": "Incomplete synthesis-structure-property chain via Plasma Atomization",
+      "category": "ssp_chain_gap",
+      "confidence": 0.57,
+      "summary": "Synthesis method \"Plasma Atomization\" produces material \"Titanium\" without linked properties or KPIs.",
+      "reasoning": [
+        "Synthesis-structure-property chain is broken at the property/KPI layer."
+      ],
+      "evidence": [
+        {
+          "edgeType": "SYNTHESIZED_BY",
+          "source": "Titanium",
+          "target": "Plasma Atomization",
+          "sourceId": "mat_Titanium",
+          "targetId": "synth_Plasma_Atomization",
+          "quote": "плазменным распылением (Plasma Atomization)",
+          "confidence": 0.95,
+          "weight": 0.5
+        },
+        {
+          "edgeType": "SYNTHESIZED_BY",
+          "source": "Titanium",
+          "target": "Gas Atomization",
+          "sourceId": "mat_Titanium",
+          "targetId": "synth_Gas_Atomization",
+          "quote": "Титановые порошки получают следующими способами: газовым распылением (Gas Atomization)",
+          "confidence": 0.95,
+          "weight": 0.5
+        },
+        {
+          "edgeType": "SYNTHESIZED_BY",
+          "source": "Titanium",
+          "target": "Plasma Atomization",
+          "sourceId": "mat_Titanium",
+          "targetId": "synth_Plasma_Atomization",
+          "quote": "плазменным распылением (Plasma Atomization)",
+          "confidence": 0.95,
+          "weight": 0.5
+        }
+      ],
+      "suggestedExperiments": [
+        "Characterize key properties after this synthesis route and link to KPI targets."
+      ],
+      "relatedNodes": [
+        "synth_Plasma_Atomization",
+        "mat_Titanium"
+      ],
+      "subgraph": {
+        "nodes": [
+          {
+            "id": "mat_Titanium",
+            "type": "Material",
+            "text": "Titanium (титан, Ti)",
+            "node_offset": 2000,
+            "definition": "Химический элемент (Ti) — лёгкий, прочный, коррозионностойкий металл. Порошок титана используется в аддитивных технологиях для производства деталей.",
+            "name": "Titanium",
+            "ontology_class": "Material",
+            "aliases": [
+              "титан",
+              "Ti"
+            ],
+            "degree_in": 1,
+            "degree_out": 5,
+            "degree_centrality": 0.007782101167315175,
+            "pagerank": 0.0011347019678480442,
+            "betweenness_centrality": 0.000011791062374719962,
+            "ontological_pagerank": 0.0013174436954556904,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 0,
+            "bridge_score": 0.000008253743662303972,
+            "concepts": [
+              "synth_Gas_Atomization",
+              "synth_Plasma_Atomization",
+              "synth_Mechanical_Grinding_Ti_Sponge",
+              "synth_PREP",
+              "synth_Aluminothermic_Reduction",
+              "mat_Tungsten"
+            ]
+          },
+          {
+            "id": "synth_Plasma_Atomization",
+            "type": "SynthesisMethod",
+            "text": "Plasma Atomization",
+            "node_offset": 2320,
+            "definition": "Метод получения сферических порошков с помощью плазменных горелок, которые расплавляют и диспергируют металл, обеспечивая высокую чистоту и узкое распределение частиц по размерам.",
+            "ontology_class": "SynthesisMethod",
+            "degree_in": 1,
+            "degree_out": 0,
+            "degree_centrality": 0.0012970168612191958,
+            "pagerank": 0.0009891705552516992,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.001148600050157926,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 0,
+            "bridge_score": 0,
+            "concepts": [
+              "mat_Titanium"
+            ]
+          }
+        ],
+        "edges": [
+          {
+            "source": "mat_Titanium",
+            "target": "synth_Plasma_Atomization",
+            "type": "SYNTHESIZED_BY",
+            "weight": 0.5,
+            "conditions": "",
+            "attributes": {
+              "confidence_score": 0.95,
+              "evidence_quote": "плазменным распылением (Plasma Atomization)",
+              "source_doi": "new_textets",
+              "co_occurrence_count": 1,
+              "relation_role": "structural"
+            },
+            "inverse_weight": 2,
+            "is_inter_cluster_edge": false
+          }
+        ]
+      },
+      "relatedConcepts": [
+        "Plasma Atomization",
+        "Titanium"
+      ]
+    },
+    {
+      "id": "hyp_ssp_chain_synth_PREP_mat_Titanium",
+      "title": "Incomplete synthesis-structure-property chain via Plasma Rotating Electrode Process",
+      "category": "ssp_chain_gap",
+      "confidence": 0.57,
+      "summary": "Synthesis method \"Plasma Rotating Electrode Process\" produces material \"Titanium\" without linked properties or KPIs.",
+      "reasoning": [
+        "Synthesis-structure-property chain is broken at the property/KPI layer."
+      ],
+      "evidence": [
+        {
+          "edgeType": "SYNTHESIZED_BY",
+          "source": "Titanium",
+          "target": "Plasma Rotating Electrode Process",
+          "sourceId": "mat_Titanium",
+          "targetId": "synth_PREP",
+          "quote": "плазменным процессом вращающегося электрода (Plasma Rotating Electrode Process)",
+          "confidence": 0.95,
+          "weight": 0.5
+        },
+        {
+          "edgeType": "SYNTHESIZED_BY",
+          "source": "Titanium",
+          "target": "Gas Atomization",
+          "sourceId": "mat_Titanium",
+          "targetId": "synth_Gas_Atomization",
+          "quote": "Титановые порошки получают следующими способами: газовым распылением (Gas Atomization)",
+          "confidence": 0.95,
+          "weight": 0.5
+        },
+        {
+          "edgeType": "SYNTHESIZED_BY",
+          "source": "Titanium",
+          "target": "Plasma Atomization",
+          "sourceId": "mat_Titanium",
+          "targetId": "synth_Plasma_Atomization",
+          "quote": "плазменным распылением (Plasma Atomization)",
+          "confidence": 0.95,
+          "weight": 0.5
+        }
+      ],
+      "suggestedExperiments": [
+        "Characterize key properties after this synthesis route and link to KPI targets."
+      ],
+      "relatedNodes": [
+        "synth_PREP",
+        "mat_Titanium"
+      ],
+      "subgraph": {
+        "nodes": [
+          {
+            "id": "mat_Titanium",
+            "type": "Material",
+            "text": "Titanium (титан, Ti)",
+            "node_offset": 2000,
+            "definition": "Химический элемент (Ti) — лёгкий, прочный, коррозионностойкий металл. Порошок титана используется в аддитивных технологиях для производства деталей.",
+            "name": "Titanium",
+            "ontology_class": "Material",
+            "aliases": [
+              "титан",
+              "Ti"
+            ],
+            "degree_in": 1,
+            "degree_out": 5,
+            "degree_centrality": 0.007782101167315175,
+            "pagerank": 0.0011347019678480442,
+            "betweenness_centrality": 0.000011791062374719962,
+            "ontological_pagerank": 0.0013174436954556904,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 0,
+            "bridge_score": 0.000008253743662303972,
+            "concepts": [
+              "synth_Gas_Atomization",
+              "synth_Plasma_Atomization",
+              "synth_Mechanical_Grinding_Ti_Sponge",
+              "synth_PREP",
+              "synth_Aluminothermic_Reduction",
+              "mat_Tungsten"
+            ]
+          },
+          {
+            "id": "synth_PREP",
+            "type": "SynthesisMethod",
+            "text": "Plasma Rotating Electrode Process",
+            "node_offset": 2340,
+            "definition": "Метод получения порошков, при котором вращающийся титановый электрод оплавляется плазменной дугой, а капли расплава, срываясь под действием центробежной силы, затвердевают в сферические частицы.",
+            "ontology_class": "SynthesisMethod",
+            "degree_in": 1,
+            "degree_out": 0,
+            "degree_centrality": 0.0012970168612191958,
+            "pagerank": 0.0009891705552516992,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.001148600050157926,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 0,
+            "bridge_score": 0,
+            "concepts": [
+              "mat_Titanium"
+            ]
+          }
+        ],
+        "edges": [
+          {
+            "source": "mat_Titanium",
+            "target": "synth_PREP",
+            "type": "SYNTHESIZED_BY",
+            "weight": 0.5,
+            "conditions": "",
+            "attributes": {
+              "confidence_score": 0.95,
+              "evidence_quote": "плазменным процессом вращающегося электрода (Plasma Rotating Electrode Process)",
+              "source_doi": "new_textets",
+              "co_occurrence_count": 1,
+              "relation_role": "structural"
+            },
+            "inverse_weight": 2,
+            "is_inter_cluster_edge": false
+          }
+        ]
+      },
+      "relatedConcepts": [
+        "Plasma Rotating Electrode Process",
+        "Titanium"
+      ]
+    },
+    {
+      "id": "hyp_ssp_chain_synth_Mechanical_Grinding_Ti_Sponge_mat_Titanium",
+      "title": "Incomplete synthesis-structure-property chain via Mechanical Grinding of Titanium Sponge",
+      "category": "ssp_chain_gap",
+      "confidence": 0.57,
+      "summary": "Synthesis method \"Mechanical Grinding of Titanium Sponge\" produces material \"Titanium\" without linked properties or KPIs.",
+      "reasoning": [
+        "Synthesis-structure-property chain is broken at the property/KPI layer."
+      ],
+      "evidence": [
+        {
+          "edgeType": "SYNTHESIZED_BY",
+          "source": "Titanium",
+          "target": "Mechanical Grinding of Titanium Sponge",
+          "sourceId": "mat_Titanium",
+          "targetId": "synth_Mechanical_Grinding_Ti_Sponge",
+          "quote": "Основным способом получения титановых порошков в России является механическое измельчение титановой губки",
+          "confidence": 0.95,
+          "weight": 0.5
+        },
+        {
+          "edgeType": "SYNTHESIZED_BY",
+          "source": "Titanium",
+          "target": "Gas Atomization",
+          "sourceId": "mat_Titanium",
+          "targetId": "synth_Gas_Atomization",
+          "quote": "Титановые порошки получают следующими способами: газовым распылением (Gas Atomization)",
+          "confidence": 0.95,
+          "weight": 0.5
+        },
+        {
+          "edgeType": "SYNTHESIZED_BY",
+          "source": "Titanium",
+          "target": "Plasma Atomization",
+          "sourceId": "mat_Titanium",
+          "targetId": "synth_Plasma_Atomization",
+          "quote": "плазменным распылением (Plasma Atomization)",
+          "confidence": 0.95,
+          "weight": 0.5
+        }
+      ],
+      "suggestedExperiments": [
+        "Characterize key properties after this synthesis route and link to KPI targets."
+      ],
+      "relatedNodes": [
+        "synth_Mechanical_Grinding_Ti_Sponge",
+        "mat_Titanium"
+      ],
+      "subgraph": {
+        "nodes": [
+          {
+            "id": "mat_Titanium",
+            "type": "Material",
+            "text": "Titanium (титан, Ti)",
+            "node_offset": 2000,
+            "definition": "Химический элемент (Ti) — лёгкий, прочный, коррозионностойкий металл. Порошок титана используется в аддитивных технологиях для производства деталей.",
+            "name": "Titanium",
+            "ontology_class": "Material",
+            "aliases": [
+              "титан",
+              "Ti"
+            ],
+            "degree_in": 1,
+            "degree_out": 5,
+            "degree_centrality": 0.007782101167315175,
+            "pagerank": 0.0011347019678480442,
+            "betweenness_centrality": 0.000011791062374719962,
+            "ontological_pagerank": 0.0013174436954556904,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 0,
+            "bridge_score": 0.000008253743662303972,
+            "concepts": [
+              "synth_Gas_Atomization",
+              "synth_Plasma_Atomization",
+              "synth_Mechanical_Grinding_Ti_Sponge",
+              "synth_PREP",
+              "synth_Aluminothermic_Reduction",
+              "mat_Tungsten"
+            ]
+          },
+          {
+            "id": "synth_Mechanical_Grinding_Ti_Sponge",
+            "type": "SynthesisMethod",
+            "text": "Mechanical Grinding of Titanium Sponge",
+            "node_offset": 2360,
+            "definition": "Многостадийный способ производства порошка, при котором титановую губку (получаемую восстановлением TiCl4 магнием) измельчают и рассеивают по фракциям; реализован на «ВСМПО-АВИСМА».",
+            "ontology_class": "SynthesisMethod",
+            "degree_in": 1,
+            "degree_out": 0,
+            "degree_centrality": 0.0012970168612191958,
+            "pagerank": 0.0009891705552516992,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.001148600050157926,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 0,
+            "bridge_score": 0,
+            "concepts": [
+              "mat_Titanium"
+            ]
+          }
+        ],
+        "edges": [
+          {
+            "source": "mat_Titanium",
+            "target": "synth_Mechanical_Grinding_Ti_Sponge",
+            "type": "SYNTHESIZED_BY",
+            "weight": 0.5,
+            "conditions": "",
+            "attributes": {
+              "confidence_score": 0.95,
+              "evidence_quote": "Основным способом получения титановых порошков в России является механическое измельчение титановой губки",
+              "source_doi": "new_textets",
+              "co_occurrence_count": 1,
+              "relation_role": "structural"
+            },
+            "inverse_weight": 2,
+            "is_inter_cluster_edge": false
+          }
+        ]
+      },
+      "relatedConcepts": [
+        "Mechanical Grinding of Titanium Sponge",
+        "Titanium"
+      ]
+    },
+    {
+      "id": "hyp_ssp_chain_synth_Aluminothermic_Reduction_mat_Titanium",
+      "title": "Incomplete synthesis-structure-property chain via Aluminothermic Reduction",
+      "category": "ssp_chain_gap",
+      "confidence": 0.57,
+      "summary": "Synthesis method \"Aluminothermic Reduction\" produces material \"Titanium\" without linked properties or KPIs.",
+      "reasoning": [
+        "Synthesis-structure-property chain is broken at the property/KPI layer."
+      ],
+      "evidence": [
+        {
+          "edgeType": "SYNTHESIZED_BY",
+          "source": "Titanium",
+          "target": "Aluminothermic Reduction",
+          "sourceId": "mat_Titanium",
+          "targetId": "synth_Aluminothermic_Reduction",
+          "quote": "Предложена технология получения титановых порошков алюмотермическим способом из TiO2",
+          "confidence": 0.93,
+          "weight": 0.5
+        },
+        {
+          "edgeType": "SYNTHESIZED_BY",
+          "source": "Titanium",
+          "target": "Gas Atomization",
+          "sourceId": "mat_Titanium",
+          "targetId": "synth_Gas_Atomization",
+          "quote": "Титановые порошки получают следующими способами: газовым распылением (Gas Atomization)",
+          "confidence": 0.95,
+          "weight": 0.5
+        },
+        {
+          "edgeType": "SYNTHESIZED_BY",
+          "source": "Titanium",
+          "target": "Plasma Atomization",
+          "sourceId": "mat_Titanium",
+          "targetId": "synth_Plasma_Atomization",
+          "quote": "плазменным распылением (Plasma Atomization)",
+          "confidence": 0.95,
+          "weight": 0.5
+        }
+      ],
+      "suggestedExperiments": [
+        "Characterize key properties after this synthesis route and link to KPI targets."
+      ],
+      "relatedNodes": [
+        "synth_Aluminothermic_Reduction",
+        "mat_Titanium"
+      ],
+      "subgraph": {
+        "nodes": [
+          {
+            "id": "mat_Titanium",
+            "type": "Material",
+            "text": "Titanium (титан, Ti)",
+            "node_offset": 2000,
+            "definition": "Химический элемент (Ti) — лёгкий, прочный, коррозионностойкий металл. Порошок титана используется в аддитивных технологиях для производства деталей.",
+            "name": "Titanium",
+            "ontology_class": "Material",
+            "aliases": [
+              "титан",
+              "Ti"
+            ],
+            "degree_in": 1,
+            "degree_out": 5,
+            "degree_centrality": 0.007782101167315175,
+            "pagerank": 0.0011347019678480442,
+            "betweenness_centrality": 0.000011791062374719962,
+            "ontological_pagerank": 0.0013174436954556904,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 0,
+            "bridge_score": 0.000008253743662303972,
+            "concepts": [
+              "synth_Gas_Atomization",
+              "synth_Plasma_Atomization",
+              "synth_Mechanical_Grinding_Ti_Sponge",
+              "synth_PREP",
+              "synth_Aluminothermic_Reduction",
+              "mat_Tungsten"
+            ]
+          },
+          {
+            "id": "synth_Aluminothermic_Reduction",
+            "type": "SynthesisMethod",
+            "text": "Aluminothermic Reduction",
+            "node_offset": 2380,
+            "definition": "Метод получения титанового порошка путём восстановления TiO2 алюминием при 1150 °C в вакууме. В результате образуются гранулы титана и корунд (Al2O3).",
+            "ontology_class": "SynthesisMethod",
+            "degree_in": 1,
+            "degree_out": 2,
+            "degree_centrality": 0.0038910505836575876,
+            "pagerank": 0.0009891705552516992,
+            "betweenness_centrality": 0.000006737749928411407,
+            "ontological_pagerank": 0.001148600050157926,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 0,
+            "bridge_score": 0.0000047164249498879845,
+            "concepts": [
+              "cond_High_Temperature_1150C",
+              "mat_Titanium",
+              "cond_Vacuum"
+            ]
+          }
+        ],
+        "edges": [
+          {
+            "source": "mat_Titanium",
+            "target": "synth_Aluminothermic_Reduction",
+            "type": "SYNTHESIZED_BY",
+            "weight": 0.5,
+            "conditions": "",
+            "attributes": {
+              "confidence_score": 0.93,
+              "evidence_quote": "Предложена технология получения титановых порошков алюмотермическим способом из TiO2",
+              "source_doi": "new_textets",
+              "co_occurrence_count": 1,
+              "relation_role": "structural"
+            },
+            "inverse_weight": 2,
+            "is_inter_cluster_edge": false
+          }
+        ]
+      },
+      "relatedConcepts": [
+        "Aluminothermic Reduction",
+        "Titanium"
+      ]
+    },
+    {
+      "id": "hyp_ssp_chain_method_Amalgamation_mat_GoldAmalgam",
+      "title": "Incomplete synthesis-structure-property chain via Amalgamation",
+      "category": "ssp_chain_gap",
+      "confidence": 0.57,
+      "summary": "Synthesis method \"Amalgamation\" produces material \"Gold Amalgam\" without linked properties or KPIs.",
+      "reasoning": [
+        "Synthesis-structure-property chain is broken at the property/KPI layer."
+      ],
+      "evidence": [
+        {
+          "edgeType": "SYNTHESIZED_BY",
+          "source": "Gold Amalgam",
+          "target": "Amalgamation",
+          "sourceId": "mat_GoldAmalgam",
+          "targetId": "method_Amalgamation",
+          "quote": "амальгамация – процесс, основанный на способности ртути … образовывать соединения металла с ртутью – амальгаму",
+          "confidence": 0.9,
+          "weight": 0.9
+        },
+        {
+          "edgeType": "SYNTHESIZED_BY",
+          "source": "Gold Amalgam",
+          "target": "Amalgamation",
+          "sourceId": "mat_GoldAmalgam",
+          "targetId": "method_Amalgamation",
+          "quote": "амальгамация – процесс, основанный на способности ртути … образовывать соединения металла с ртутью – амальгаму",
+          "confidence": 0.9,
+          "weight": 0.9
+        }
+      ],
+      "suggestedExperiments": [
+        "Characterize key properties after this synthesis route and link to KPI targets."
+      ],
+      "relatedNodes": [
+        "method_Amalgamation",
+        "mat_GoldAmalgam"
+      ],
+      "subgraph": {
+        "nodes": [
+          {
+            "id": "method_Amalgamation",
+            "type": "SynthesisMethod",
+            "name": "Amalgamation",
+            "metadata": {},
+            "definition": "Historical extraction method in which gold, silver, or platinum is selectively dissolved into mercury to form an amalgam. After washing, squeezing, and mercury distillation, a crude precious-metal product is obtained and the mercury is regenerated.",
+            "text": "Amalgamation (амальгамация, ртутная амальгамация)",
+            "ontology_class": "SynthesisMethod",
+            "aliases": [
+              "амальгамация",
+              "ртутная амальгамация"
+            ],
+            "degree_in": 1,
+            "degree_out": 0,
+            "degree_centrality": 0.0012970168612191958,
+            "pagerank": 0.0017152377561643463,
+            "betweenness_centrality": 0,
+            "ontological_pagerank": 0.001933215476924397,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 4,
+            "bridge_score": 0,
+            "concepts": [
+              "mat_GoldAmalgam"
+            ]
+          },
+          {
+            "id": "mat_GoldAmalgam",
+            "type": "Material",
+            "name": "Gold Amalgam",
+            "metadata": {},
+            "definition": "Product of gold amalgamation consisting of mercury with dissolved gold and dispersed solid phases. It may contain gold in solution, gold–mercury intermetallic compounds, and residual solid particles, and can become brittle when contaminated with copper or iron.",
+            "text": "Gold Amalgam (золотая амальгама, амальгама золота)",
+            "ontology_class": "Material",
+            "aliases": [
+              "золотая амальгама",
+              "амальгама золота"
+            ],
+            "degree_in": 1,
+            "degree_out": 1,
+            "degree_centrality": 0.0025940337224383916,
+            "pagerank": 0.001080830429980424,
+            "betweenness_centrality": 0.0000050533124463085555,
+            "ontological_pagerank": 0.0011864899251822177,
+            "synthesis_diversity": 1,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0,
+            "cluster_id": 4,
+            "bridge_score": 0.0000035373187124159886,
+            "concepts": [
+              "mech_MercuryDiffusionIntoGold",
+              "method_Amalgamation"
+            ]
+          }
+        ],
+        "edges": [
+          {
+            "source": "mat_GoldAmalgam",
+            "target": "method_Amalgamation",
+            "type": "SYNTHESIZED_BY",
+            "attributes": {
+              "confidence_score": 0.9,
+              "evidence_quote": "амальгамация – процесс, основанный на способности ртути … образовывать соединения металла с ртутью – амальгаму",
+              "source_doi": "geokniga-metallurgiya-blagorodnyh-metallov_0.txt",
+              "co_occurrence_count": 1,
+              "relation_role": "structural",
+              "magnitude": null,
+              "direction": "neutral",
+              "condition_context": null
+            },
+            "inverse_weight": 1,
+            "is_inter_cluster_edge": false
+          }
+        ]
+      },
+      "relatedConcepts": [
+        "Amalgamation",
+        "Gold Amalgam"
+      ]
+    },
+    {
+      "id": "hyp_ssp_chain_method_CalcineCyanidation_mat_Calcine",
+      "title": "Incomplete synthesis-structure-property chain via Calcine Cyanidation",
+      "category": "ssp_chain_gap",
+      "confidence": 0.57,
+      "summary": "Synthesis method \"Calcine Cyanidation\" produces material \"Calcine\" without linked properties or KPIs.",
+      "reasoning": [
+        "Synthesis-structure-property chain is broken at the property/KPI layer."
+      ],
+      "evidence": [
+        {
+          "edgeType": "SYNTHESIZED_BY",
+          "source": "Calcine",
+          "target": "Calcine Cyanidation",
+          "sourceId": "mat_Calcine",
+          "targetId": "method_CalcineCyanidation",
+          "quote": "В результате их цианирования удается извлечь 90–95 % содержащегося в них золота.",
+          "confidence": 0.95,
+          "weight": 0.95
+        },
+        {
+          "edgeType": "SYNTHESIZED_BY",
+          "source": "Calcine",
+          "target": "Calcine Cyanidation",
+          "sourceId": "mat_Calcine",
+          "targetId": "method_CalcineCyanidation",
+          "quote": "В результате их цианирования удается извлечь 90–95 % содержащегося в них золота.",
+          "confidence": 0.95,
+          "weight": 0.95
+        },
+        {
+          "edgeType": "SYNTHESIZED_BY",
+          "source": "Calcine",
+          "target": "Arsenatizing Roasting",
+          "sourceId": "mat_Calcine",
+          "targetId": "method_ArsenatizingRoasting",
+          "quote": "огарок, полученный в результате окислительно-арсенатизирующего обжига",
+          "confidence": 1,
+          "weight": 1
+        }
+      ],
+      "suggestedExperiments": [
+        "Characterize key properties after this synthesis route and link to KPI targets."
+      ],
+      "relatedNodes": [
+        "method_CalcineCyanidation",
+        "mat_Calcine"
+      ],
+      "subgraph": {
+        "nodes": [
+          {
+            "id": "method_CalcineCyanidation",
+            "type": "SynthesisMethod",
+            "name": "Calcine Cyanidation",
+            "metadata": {},
+            "definition": "Cyanide leaching of a roasted calcine product to recover precious metals after thermal pretreatment. In the reported process it follows arsenatizing roasting and is used to exploit the increased chemical accessibility of gold and silver in the roasted material.",
+            "text": "Calcine Cyanidation (цианирование огарка, cyanidation of calcine, roast-calcine cyanidation)",
+            "ontology_class": "SynthesisMethod",
+            "aliases": [
+              "цианирование огарка",
+              "cyanidation of calcine",
+              "roast-calcine cyanidation"
+            ],
+            "degree_in": 1,
+            "degree_out": 2,
+            "degree_centrality": 0.0038910505836575876,
+            "pagerank": 0.0010930301360967318,
+            "betweenness_centrality": 0.0000033688749642057035,
+            "ontological_pagerank": 0.0011210130400454814,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 0,
+            "failure_proximity": 0.16666666666666666,
+            "cluster_id": 8,
+            "bridge_score": 0.15000235821247496,
+            "concepts": [
+              "mat_Calcine",
+              "mat_SodiumCyanideSolution"
+            ]
+          },
+          {
+            "id": "mat_Calcine",
+            "type": "Material",
+            "name": "Calcine",
+            "metadata": {},
+            "definition": "The solid product obtained after roasting ore or concentrate under oxidizing or chlorinating conditions. In this slice the calcine is a porous, partially agglomerated arsenatizing-roast product that is subsequently subjected to cyanidation to recover gold and silver.",
+            "text": "Calcine (огарок, обожженный продукт, roast product)",
+            "ontology_class": "Material",
+            "aliases": [
+              "огарок",
+              "обожженный продукт",
+              "roast product"
+            ],
+            "degree_in": 2,
+            "degree_out": 4,
+            "degree_centrality": 0.007782101167315175,
+            "pagerank": 0.0013963067629065458,
+            "betweenness_centrality": 0.000043795374534674145,
+            "ontological_pagerank": 0.0009245823846352722,
+            "synthesis_diversity": 0,
+            "property_coverage": 0,
+            "application_breadth": 0,
+            "characterization_richness": 2,
+            "failure_proximity": 0.2,
+            "cluster_id": 8,
+            "bridge_score": 0.0000306567621742719,
+            "concepts": [
+              "char_ICP_OES",
+              "method_SorptionCyanidation",
+              "method_ArsenatizingRoasting",
+              "char_FireAssayAtomicAbsorptionAnalysis",
+              "method_CalcineCyanidation"
+            ]
+          }
+        ],
+        "edges": [
+          {
+            "source": "mat_Calcine",
+            "target": "method_CalcineCyanidation",
+            "type": "SYNTHESIZED_BY",
+            "attributes": {
+              "confidence_score": 0.95,
+              "evidence_quote": "В результате их цианирования удается извлечь 90–95 % содержащегося в них золота.",
+              "relation_role": "structural",
+              "direction": "neutral"
+            },
+            "inverse_weight": 1,
+            "is_inter_cluster_edge": false
+          },
+          {
+            "source": "method_CalcineCyanidation",
+            "target": "mat_Calcine",
+            "type": "USES_FEEDSTOCK",
+            "attributes": {
+              "confidence_score": 1,
+              "evidence_quote": "полученный огарок цианировали в сорбционном режиме",
+              "source_doi": "10.21285/1814-3520-2019-1-179-186",
+              "co_occurrence_count": 1,
+              "relation_role": "operational",
+              "direction": "neutral"
+            },
+            "inverse_weight": 1,
+            "is_inter_cluster_edge": false
+          }
+        ]
+      },
+      "relatedConcepts": [
+        "Calcine Cyanidation",
+        "Calcine"
+      ]
+    }
+  ],
+  "preferences": {
+    "theme": "dark",
+    "locale": "ru"
+  },
+  "artifactsMetadata": {
+    "lastProvider": "openrouter",
+    "lastGeneratedAt": "2026-07-03T01:31:59.848Z"
+  },
+  "integrationMode": "incremental"
+}

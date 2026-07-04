@@ -1,0 +1,31 @@
+:root {
+  --bg-primary: #fafafa;
+  --bg-secondary: #ffffff;
+  --bg-panel: #f5f5f5;
+  --text-primary: #1a1a1a;
+  --text-secondary: #666666;
+  --accent-blue: #2563eb;
+  --accent-copper: #b45309;
+  --accent-green: #16a34a;
+  --accent-orange: #ea580c;
+  --accent-purple: #7c3aed;
+  --border: #e0e0e0;
+  --danger: #dc2626;
+  --shadow: none;
+  --radius: 0;
+  --font-sans: "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "Cascadia Code", "Fira Code", monospace;
+  --font-size-base: 15px;
+  --font-size-sm: 14px;
+  --font-size-xs: 13px;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #0f1419;
+  --bg-secondary: #1a2332;
+  --bg-panel: #243044;
+  --text-primary: #e8edf5;
+  --text-secondary: #9fb0c8;
+  --border: #334155;
+  --shadow: none;
+}

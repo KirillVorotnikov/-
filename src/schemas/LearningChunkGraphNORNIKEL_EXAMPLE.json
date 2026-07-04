@@ -1,0 +1,112 @@
+{
+  "_meta": {
+    "description": "Пример промышленного подграфа для задачи оптимизации сплава Ni-W с учетом экономических, ресурсных и нормативных ограничений.",
+    "target_kpi": "Flexibility"
+  },
+  "nodes": [
+    {
+      "id": "mat_NiW_Alloy",
+      "type": "Material",
+      "name": "Ni-W Alloy",
+      "metadata": { "formula": "Ni-W", "supply_chain_risk": "medium", "base_cost_per_kg": 45.0 }
+    },
+    {
+      "id": "prop_Flexibility",
+      "type": "Property",
+      "name": "Flexibility",
+      "metadata": { "is_kpi": true }
+    },
+    {
+      "id": "cond_Temp_80C",
+      "type": "Condition",
+      "name": "Temperature >= 80°C"
+    },
+    {
+      "id": "equip_InductionFurnace",
+      "type": "Equipment",
+      "name": "Induction Furnace",
+      "metadata": { "cost_estimate_usd": 150000 }
+    },
+    {
+      "id": "metric_ProductionCost",
+      "type": "BusinessMetric",
+      "name": "Production Cost",
+      "metadata": { "is_kpi": true }
+    },
+    {
+      "id": "const_GOST_52290",
+      "type": "Constraint",
+      "name": "GOST R 52290-2004"
+    },
+    {
+      "id": "src_InternalReport_2023",
+      "type": "Source",
+      "name": "Internal Lab Report 2023-Q3",
+      "metadata": { "source_type": "internal_report" }
+    }
+  ],
+  "edges": [
+    {
+      "source": "cond_Temp_80C",
+      "target": "prop_Flexibility",
+      "type": "IMPROVES",
+      "attributes": {
+        "confidence_score": 0.92,
+        "evidence_quote": "при повышении температуры до 80 градусов повышается гибкость на 20%",
+        "source_doi": "Internal Lab Report 2023-Q3",
+        "co_occurrence_count": 5,
+        "relation_role": "causal",
+        "magnitude": "+20%",
+        "direction": "positive"
+      }
+    },
+    {
+      "source": "mat_NiW_Alloy",
+      "target": "equip_InductionFurnace",
+      "type": "REQUIRES_EQUIPMENT",
+      "attributes": {
+        "confidence_score": 0.95,
+        "evidence_quote": "плавка осуществляется в индукционной печи",
+        "source_doi": "Internal Lab Report 2023-Q3",
+        "co_occurrence_count": 12,
+        "relation_role": "operational"
+      }
+    },
+    {
+      "source": "mat_NiW_Alloy",
+      "target": "metric_ProductionCost",
+      "type": "IMPACTS_COST",
+      "attributes": {
+        "confidence_score": 0.88,
+        "evidence_quote": "добавление вольфрама увеличивает себестоимость шихты",
+        "source_doi": "Internal Lab Report 2023-Q3",
+        "co_occurrence_count": 8,
+        "relation_role": "economic",
+        "direction": "negative"
+      }
+    },
+    {
+      "source": "mat_NiW_Alloy",
+      "target": "const_GOST_52290",
+      "type": "HAS_REGULATION",
+      "attributes": {
+        "confidence_score": 1.0,
+        "evidence_quote": "сплав должен соответствовать требованиям ГОСТ",
+        "source_doi": "Normative Base",
+        "co_occurrence_count": 1,
+        "relation_role": "structural"
+      }
+    },
+    {
+      "source": "mat_NiW_Alloy",
+      "target": "src_InternalReport_2023",
+      "type": "SUPPORTED_BY",
+      "attributes": {
+        "confidence_score": 1.0,
+        "evidence_quote": "N/A",
+        "source_doi": "Internal Lab Report 2023-Q3",
+        "relation_role": "structural"
+      }
+    }
+  ]
+}

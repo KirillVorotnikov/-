@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/ConceptDictionary_Nornikel.schema.json",
+  "title": "ConceptDictionary_Nornikel",
+  "type": "object",
+  "properties": {
+    "concepts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["concept_id", "term", "definition", "ontology_class"],
+        "properties": {
+          "concept_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9:_.-]+$",
+            "description": "Уникальный ID. Разрешены буквы, цифры, двоеточие, подчеркивание, дефис и ТОЧКА."
+          },
+          "term": {
+            "type": "object",
+            "required": ["primary"],
+            "properties": {
+              "primary": { "type": "string", "minLength": 1 },
+              "aliases": {
+                "type": "array",
+                "items": { "type": "string", "minLength": 1 },
+                "uniqueItems": true
+              }
+            }
+          },
+          "definition": { "type": "string", "minLength": 1 },
+          "ontology_class": {
+            "type": "string",
+            "enum": [
+              "Material", "Property", "SynthesisMethod", "CharacterizationMethod",
+              "FailureMode", "Mechanism", "Condition", "Application", "Source",
+              "Equipment", "BusinessMetric", "InternalExperiment", "Constraint", "HypothesisRecord"
+            ],
+            "description": "Строгий онтологический класс для валидации Domain/Range в графе"
+          },
+          "is_kpi": {
+            "type": "boolean",
+            "description": "Является ли сущность целевым показателем (KPI) для оптимизации"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "required": ["concepts"],
+  "additionalProperties": true
+}

@@ -1,0 +1,87 @@
+# =============================================================================
+# КОНФИГУРАЦИЯ ПЛАЙПЛАЙНА iText2KG
+# Поддерживает только OpenRouter и локальные модели (OpenAI исключён)
+# =============================================================================
+
+[slicer]
+max_tokens              = 4000
+soft_boundary           = true
+soft_boundary_max_shift = 500
+allowed_extensions      = ["txt", "md", "html"]
+# Путь к локальному токенизатору
+tokenizer_path          = "C:/Хакатоны/Nornikel/nornikel_KG/src/qwen2.5-0.5b-instruct"
+log_level               = "info"
+
+# -----------------------------------------------------------------------------
+# Извлечение концептов
+# -----------------------------------------------------------------------------
+[itext2kg_concepts]
+# Провайдер: "openrouter" (онлайн) или "local_transformers" (оффлайн)
+provider            = "openrouter"
+# Путь к локальной модели (обязателен если provider = local_transformers)
+local_model_path    = "C:/Хакатоны/Nornikel/nornikel_KG/src/qwen2.5-0.5b-instruct"
+# Для OpenRouter:
+base_url            = "https://routerai.ru/api/v1"
+api_key             = ""
+model               = "deepseek/deepseek-v4-pro"
+tpm_limit           = 100000
+max_completion      = 16384
+temperature         = 0.6
+timeout             = 1200
+max_retries         = 3
+log_level           = "info"
+request_delay_seconds = 10
+
+# -----------------------------------------------------------------------------
+# Построение графа знаний
+# -----------------------------------------------------------------------------
+[itext2kg_graph]
+provider            = "openrouter"
+local_model_path    = "C:/Хакатоны/Nornikel/nornikel_KG/src/qwen2.5-0.5b-instruct"
+base_url            = "https://routerai.ru/api/v1"
+api_key             = ""
+model               = "deepseek/deepseek-v4-pro"
+tpm_limit           = 1000000
+max_completion      = 32768
+temperature         = 0.6
+timeout             = 1200
+max_retries         = 3
+log_level           = "info"
+auto_mentions_weight = 0.35
+request_delay_seconds = 10
+
+# -----------------------------------------------------------------------------
+# Удаление дубликатов (только локальные эмбеддинги)
+# -----------------------------------------------------------------------------
+[dedup]
+embedding_model     = "C:/Хакатоны/Nornikel/nornikel_KG/src/multilingual-e5-large"
+sim_threshold       = 0.85
+len_ratio_min       = 0.8
+faiss_M             = 32
+faiss_efC           = 200
+faiss_metric        = "INNER_PRODUCT"
+k_neighbors         = 5
+
+# -----------------------------------------------------------------------------
+# Добавление дальнодействующих связей
+# -----------------------------------------------------------------------------
+[refiner]
+run                 = true
+provider            = "openrouter"
+local_model_path    = "C:/Хакатоны/Nornikel/nornikel_KG/src/qwen2.5-0.5b-instruct"
+base_url            = "https://routerai.ru/api/v1"
+api_key             = ""
+model               = "deepseek/deepseek-v4-pro"
+tpm_limit           = 100000
+max_completion      = 4096
+temperature         = 0.6
+timeout             = 1200
+max_retries         = 3
+embedding_model     = "C:/Хакатоны/Nornikel/nornikel_KG/src/multilingual-e5-large"
+sim_threshold       = 0.75
+max_pairs_per_node  = 5
+faiss_M             = 32
+faiss_metric        = "INNER_PRODUCT"
+enable_backward_pass = false
+log_level           = "info"
+request_delay_seconds = 10

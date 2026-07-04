@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/MaterialsHypothesisGraph_Nornikel.schema.json",
+  "title": "MaterialsHypothesisGraph_Nornikel",
+  "description": "Расширенная онтология графа знаний для генерации объяснимых научных и промышленных гипотез в материаловедении и металлургии с учетом экономических и ресурсных ограничений.",
+  "type": "object",
+  "properties": {
+    "nodes": {
+      "type": "array",
+      "description": "Сущности графа знаний.",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "name"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9:_-]+$",
+            "description": "Уникальный идентификатор. Формат: {type}_{canonical_name} (например, mat_NiW_Alloy, equip_InductionFurnace)."
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "Material", "Property", "SynthesisMethod", "CharacterizationMethod",
+              "FailureMode", "Mechanism", "Condition", "Application", "Source",
+              "Equipment", "BusinessMetric", "InternalExperiment", "Constraint", "HypothesisRecord"
+            ],
+            "description": "Строгий класс сущности согласно онтологии."
+          },
+          "name": {
+            "type": "string",
+            "description": "Каноническое (нормализованное) имя сущности."
+          },
+          "metadata": {
+            "type": "object",
+            "properties": {
+              "is_kpi": { "type": "boolean", "description": "Является ли свойство или метрика целевым показателем (KPI)." },
+              "formula": { "type": "string", "description": "Химическая формула (для узлов типа Material)." },
+              "acronym": { "type": "string", "description": "Общепринятая аббревиатура." },
+              "source_type": { "type": "string", "enum": ["literature", "patent", "internal_report", "lab_notebook", "database"], "description": "Тип источника (для Source)." },
+              "estimated_duration_hours": { "type": "number", "description": "Оценочная длительность процесса в часах (для SynthesisMethod/CharacterizationMethod)." },
+              "cost_estimate_usd": { "type": "number", "description": "Оценочная стоимость процесса или оборудования (USD)." },
+              "safety_hazards": { "type": "array", "items": {"type": "string"}, "description": "Потенциальные риски безопасности и токсичность." },
+              "supply_chain_risk": { "type": "string", "enum": ["low", "medium", "high", "critical"], "description": "Риск цепочки поставок сырья." },
+              "base_cost_per_kg": { "type": "number", "description": "Базовая стоимость за кг (для Material)." }
+            },
+            "additionalProperties": true
+          }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "description": "Связи между сущностями.",
+      "items": {
+        "type": "object",
+        "required": ["source", "target", "type", "attributes"],
+        "properties": {
+          "source": { "type": "string", "description": "ID исходного узла (Subject)." },
+          "target": { "type": "string", "description": "ID целевого узла (Object)." },
+          "type": {
+            "type": "string",
+            "enum": [
+              "IMPROVES", "DEGRADES", "CAUSES", "MITIGATES", "REQUIRES_CONDITION",
+              "SYNTHESIZED_BY", "CHARACTERIZED_BY", "HAS_FAILURE_MODE", "APPLIED_IN",
+              "SUPPORTED_BY", "SUBCLASS_OF",
+              "REQUIRES_EQUIPMENT", "USES_FEEDSTOCK", "IMPACTS_COST", "HAS_REGULATION",
+              "ANALOGOUS_TO", "SUBSTITUTE_FOR", "TESTED_BY", "CONFIRMS", "REFUTES"
+            ],
+            "description": "Типизированное отношение. Определяет domain/range ограничения."
+          },
+          "attributes": {
+            "type": "object",
+            "required": ["confidence_score", "evidence_quote", "source_doi", "relation_role"],
+            "properties": {
+              "confidence_score": { "type": "number", "minimum": 0, "maximum": 1, "description": "Уверенность экстракции (0.0 - 1.0). Связи < 0.5 помечаются как High Risk." },
+              "evidence_quote": { "type": "string", "description": "Точная цитата из текста или ссылка на внутренний отчет." },
+              "source_doi": { "type": "string", "description": "DOI, ID патента или внутреннего документа (Provenance)." },
+              "co_occurrence_count": { "type": "integer", "minimum": 0, "description": "Частота совместной встречаемости в корпусе (база для расчета веса)." },
+              "relation_role": {
+                "type": "string",
+                "enum": ["causal", "structural", "taxonomic", "economic", "operational"],
+                "description": "Роль связи. 'causal' и 'economic' получают бустинг при формировании подграфа."
+              },
+              "magnitude": { "type": "string", "description": "Количественная оценка эффекта (например, '+20%', 'high', '0.776')." },
+              "direction": { "type": "string", "enum": ["positive", "negative", "neutral"], "description": "Направление влияния. Критично для фильтрации при поиске улучшений." },
+              "condition_context": { "type": "string", "description": "Условия, при которых связь справедлива (например, 'at 60°C')." }
+            },
+            "additionalProperties": true
+          }
+        }
+      }
+    }
+  },
+  "required": ["nodes", "edges"],
+  "additionalProperties": false
+}

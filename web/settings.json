@@ -1,0 +1,52 @@
+{
+  "port": 3847,
+  "mode": "online",
+  "providers": {
+    "online": "openrouter",
+    "offline": "local_transformers"
+  },
+  "paths": {
+    "pythonVenv": "../.venv",
+    "projectRoot": ".."
+  },
+  "pipeline": {
+    "stages": [
+      "slicer",
+      "concepts",
+      "graph",
+      "refiner",
+      "metrics"
+    ],
+    "autoRunMetrics": true
+  },
+  "hypothesis": {
+    "minConfidence": 0.4,
+    "maxResults": 20,
+    "focusAreas": [
+      "Material",
+      "Property",
+      "SynthesisMethod"
+    ]
+  },
+  "accelmat": {
+    "projectDir": "../Hypothesis-Generation-for-Materials-Discovery-and-Design-Using-Goal-Driven-and-Constraint-Guided-LLM",
+    "pythonExecutable": "python",
+    "defaults": {
+      "maxRefinementIterations": 1,
+      "numHypotheses": 5
+    }
+  },
+  "feynman": {
+    "root": "../feynman",
+    "cwd": "..",
+    "idleTimeoutMs": 900000,
+    "model": "yandex-ai-studio/gpt://b1ggusvist6c2sia1dno/qwen3-235b-a22b-fp8/latest"
+  },
+  "security": {
+    "apiKey": ""
+  },
+  "ui": {
+    "defaultTheme": "dark",
+    "graphMaxNodesLOD": 2000
+  }
+}

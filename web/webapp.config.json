@@ -1,0 +1,10 @@
+{
+  "port": 3847,
+  "locale": "ru",
+  "cdnFallback": true,
+  "auditLogDir": "viz/logs",
+  "diagnosticsLogDir": "viz/logs",
+  "generatedViewerPath": "viz/data/out/knowledge_graph_viewer.html",
+  "generatedGraphPath": "viz/data/out/knowledge_graph.html",
+  "stateFile": "runtime/app_state.json"
+}

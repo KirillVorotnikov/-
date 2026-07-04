@@ -1,0 +1,67 @@
+[project]
+name = "doc-converter"
+version = "0.1.0"
+description = "Document conversion pipeline (docx/pdf/xlsx/png → md/html) for hypothesis factory preprocessing"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "typer>=0.12.0",
+    "rich>=13.7.0",
+    "pydantic>=2.0.0",
+    "pydantic-settings>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "openpyxl>=3.1.0",
+    "pandas>=2.0.0",
+    "Jinja2>=3.1.0",
+]
+
+[project.optional-dependencies]
+docx = ["pypandoc>=1.13", "python-docx>=1.1.0"]
+pdf = ["marker-pdf>=0.2.0", "pymupdf>=1.24.0"]
+ocr = ["paddleocr>=2.7.0", "img2table>=1.2.0", "opencv-python-headless>=4.8.0"]
+vlm = ["openai>=1.58.0", "anthropic>=0.40.0"]
+local-vlm = ["transformers>=4.40.0", "torch>=2.0.0", "pillow>=10.0.0"]
+grobid = ["grobid-client-python>=0.0.8"]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.0.0",
+    "python-docx>=1.1.0",
+    "pillow>=10.0.0",
+    "pypandoc>=1.13",
+]
+all = [
+    "doc-converter[docx,pdf,ocr,vlm,grobid,dev]",
+]
+
+[project.scripts]
+doc-convert = "doc_converter.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["doc_converter"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = [
+    "integration: tests that require pandoc or external tools",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+disallow_untyped_defs = true
+ignore_missing_imports = true

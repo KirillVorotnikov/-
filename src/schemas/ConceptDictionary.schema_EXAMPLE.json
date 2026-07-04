@@ -1,0 +1,60 @@
+{
+  "concepts": [
+    {
+      "concept_id": "mat_NiW_Alloy",
+      "term": {
+        "primary": "Ni-W Alloy",
+        "aliases": ["сплав никель-вольфрам", "никель-вольфрамовый сплав", "Ni-W"]
+      },
+      "definition": "Жаропрочный и коррозионностойкий сплав на основе никеля и вольфрама, применяемый в экстремальных условиях эксплуатации.",
+      "ontology_class": "Material"
+    },
+    {
+      "concept_id": "prop_Flexibility",
+      "term": {
+        "primary": "Flexibility",
+        "aliases": ["гибкость", "пластичность", "ductility"]
+      },
+      "definition": "Способность материала деформироваться без разрушения под действием механических нагрузок.",
+      "ontology_class": "Property",
+      "is_kpi": true
+    },
+    {
+      "concept_id": "equip_InductionFurnace",
+      "term": {
+        "primary": "Induction Furnace",
+        "aliases": ["индукционная печь", "ИП", "печь индукционного нагрева"]
+      },
+      "definition": "Плавильная печь, использующая принцип электромагнитной индукции для нагрева и плавки токопроводящих материалов.",
+      "ontology_class": "Equipment"
+    },
+    {
+      "concept_id": "metric_CostPerTon",
+      "term": {
+        "primary": "Cost Per Ton",
+        "aliases": ["себестоимость на тонну", "удельная себестоимость", "production cost"]
+      },
+      "definition": "Экономический показатель, отражающий совокупные затраты на производство единицы массы материала.",
+      "ontology_class": "BusinessMetric",
+      "is_kpi": true
+    },
+    {
+      "concept_id": "const_GOST_52290",
+      "term": {
+        "primary": "GOST R 52290-2004",
+        "aliases": ["ГОСТ Р 52290-2004", "Сталь и сплавы"]
+      },
+      "definition": "Нормативный документ, регламентирующий технические требования к сталям и сплавам для конкретных промышленных применений.",
+      "ontology_class": "Constraint"
+    },
+    {
+      "concept_id": "hyp_Nb_Addition",
+      "term": {
+        "primary": "Hypothesis: Nb Addition",
+        "aliases": ["Гипотеза легирования ниобием"]
+      },
+      "definition": "Предположение о том, что добавка 0.3% ниобия повысит жаропрочность за счет формирования дисперсных карбидов.",
+      "ontology_class": "HypothesisRecord"
+    }
+  ]
+}

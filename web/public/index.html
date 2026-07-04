@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K2-18 Materials Knowledge Graph</title>
+  <link rel="stylesheet" href="/css/theme.css">
+  <script src="https://unpkg.com/cytoscape@3.30.2/dist/cytoscape.min.js"></script>
+  <script src="/vendor/cytoscape-cose-bilkent.js"></script>
+</head>
+<body>
+  <div id="app">
+    <header class="top-bar">
+      <div class="brand">
+        <div class="brand-mark">K2</div>
+        <div>
+          <h1>Materials Knowledge Graph</h1>
+          <p class="subtitle">Synthesis · Structure · Property Intelligence</p>
+        </div>
+      </div>
+      <div class="top-actions">
+        <div class="mode-switch" id="modeSwitch">
+          <button type="button" data-mode="online" class="mode-btn active">Online</button>
+          <button type="button" data-mode="offline" class="mode-btn">Offline</button>
+        </div>
+        <button type="button" id="themeToggle" class="icon-btn" title="Toggle theme">◐</button>
+        <button type="button" id="commandPaletteBtn" class="icon-btn" title="Command palette (Ctrl+K)">⌘K</button>
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <button type="button" class="nav-item active" data-view="dashboard">Dashboard</button>
+      <button type="button" class="nav-item" data-view="pipeline">Pipeline</button>
+      <button type="button" class="nav-item" data-view="graph">Graph Explorer</button>
+      <button type="button" class="nav-item" data-view="hypotheses">KPI Hypotheses</button>
+      <button type="button" class="nav-item" data-view="audit">Audit Log</button>
+    </nav>
+
+    <main class="content">
+      <!-- Dashboard -->
+      <section id="view-dashboard" class="view active">
+        <div class="kpi-grid">
+          <article class="kpi-card">
+            <span class="kpi-label">Operational Mode</span>
+            <strong id="kpiMode">—</strong>
+            <small id="kpiProvider">—</small>
+          </article>
+          <article class="kpi-card">
+            <span class="kpi-label">Corpus Files</span>
+            <strong id="kpiFiles">0</strong>
+            <small>txt · md · html</small>
+          </article>
+          <article class="kpi-card">
+            <span class="kpi-label">Graph Nodes</span>
+            <strong id="kpiNodes">0</strong>
+            <small id="kpiEdges">0 edges</small>
+          </article>
+          <article class="kpi-card">
+            <span class="kpi-label">Active Job</span>
+            <strong id="kpiJobStatus">Idle</strong>
+            <small id="kpiJobStage">—</small>
+          </article>
+        </div>
+
+        <div class="panel-grid">
+          <section class="panel">
+            <header><h2>Quick Upload</h2></header>
+            <form id="uploadForm">
+              <div class="dropzone" id="dropzone">
+                <p>Drop materials literature files here</p>
+                <p class="hint">Plain text · Markdown · HTML</p>
+                <input type="file" id="fileInput" multiple accept=".txt,.md,.html">
+              </div>
+              <fieldset class="inline-fieldset">
+                <legend>Integration</legend>
+                <label><input type="radio" name="integration" value="new" checked> New graph</label>
+                <label><input type="radio" name="integration" value="incremental"> Append to existing</label>
+              </fieldset>
+              <button type="submit" class="primary">Upload Documents</button>
+            </form>
+          </section>
+
+          <section class="panel">
+            <header><h2>Recent Operations</h2></header>
+            <ul id="recentJobs" class="job-list"></ul>
+          </section>
+        </div>
+      </section>
+
+      <!-- Pipeline -->
+      <section id="view-pipeline" class="view">
+        <div class="panel">
+          <header class="panel-header-row">
+            <h2>Graph Construction Pipeline</h2>
+            <div class="button-row">
+              <button type="button" id="runPipelineBtn" class="primary">Run Full Pipeline</button>
+              <button type="button" id="pauseJobBtn" class="secondary">Pause</button>
+              <button type="button" id="cancelJobBtn" class="danger">Cancel</button>
+            </div>
+          </header>
+          <div class="stage-track" id="stageTrack"></div>
+          <div class="progress-bar"><div id="jobProgress"></div></div>
+          <pre id="pipelineLog" class="log-console"></pre>
+        </div>
+      </section>
+
+      <!-- Graph -->
+      <section id="view-graph" class="view">
+        <div class="graph-layout">
+          <aside class="graph-sidebar">
+            <h3>View Mode</h3>
+            <select id="graphViewMode">
+              <option value="all">Full Graph</option>
+              <option value="materials">Materials</option>
+              <option value="properties">Properties (KPI)</option>
+              <option value="synthesis">Synthesis Methods</option>
+              <option value="clusters">Cluster View</option>
+              <option value="paths">Dependency Paths</option>
+            </select>
+            <h3>Node Filters</h3>
+            <div id="typeFilters" class="filter-list"></div>
+            <h3>Selected Node</h3>
+            <div id="nodeDetails" class="node-details empty">Hover or click a node</div>
+          </aside>
+          <div class="graph-main">
+            <div class="graph-toolbar">
+              <input type="search" id="graphSearch" placeholder="Search concepts, materials, properties…">
+              <span id="graphStats" class="graph-stats">0 nodes</span>
+            </div>
+            <div id="cyContainer" class="cy-container"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hypotheses -->
+      <section id="view-hypotheses" class="view">
+        <div class="panel">
+          <header class="panel-header-row">
+            <h2>KPI Hypothesis Workspace</h2>
+            <div class="button-row">
+              <button type="button" id="generateHypothesesBtn" class="primary">Generate Hypotheses</button>
+              <button type="button" id="exportHypothesesBtn" class="secondary">Export Markdown</button>
+            </div>
+          </header>
+          <form id="hypothesisForm" class="hypothesis-form">
+            <label>Target property<input type="text" name="targetProperty" placeholder="e.g. cycle life"></label>
+            <label>Min confidence<input type="number" name="minConfidence" min="0" max="1" step="0.05" value="0.4"></label>
+            <label>Max results<input type="number" name="maxResults" min="1" max="50" value="20"></label>
+          </form>
+          <div id="hypothesisResults" class="hypothesis-results"></div>
+        </div>
+      </section>
+
+      <!-- Audit -->
+      <section id="view-audit" class="view">
+        <div class="panel">
+          <header><h2>Audit Trail</h2></header>
+          <table class="audit-table">
+            <thead><tr><th>Time</th><th>Event</th><th>Details</th></tr></thead>
+            <tbody id="auditBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="commandPalette" class="command-palette">
+    <input type="search" id="commandInput" placeholder="Type a command or search concepts…">
+    <ul id="commandResults"></ul>
+  </dialog>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
